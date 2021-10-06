@@ -76,7 +76,6 @@ const Explain = ({ id }) => {
 
                     <div id="buttonChaineNumero2">
                         <Form.Select>
-
                             {
                                 column?.map(
                                     t => (
