@@ -1,0 +1,709 @@
+div#principalContainerHome {
+    width: 1359px;
+    display: flex;
+    margin: 77px;
+    top: 75px;
+    position: relative;
+    flex-wrap: wrap;
+    flex: -15 -19 195px;
+}
+
+
+div#homeimg1 {
+    top: 81px;
+    left: 72px;
+    width: 436px;
+    height: 203px;
+    margin: 6px;
+    z-index: 0;
+}
+
+div#img1home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-image: url(https://images.unsplash.com/photo-1547347268-4a6dd064cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHw1fHxhcmNoZXJ8ZW58MXx8fHwxNjI4MDg2ODIz&ixlib=rb-1.2.1&q=80&w=1080);
+    width: 436px;
+    height: 203px;
+    pointer-events: none;
+}
+
+div#homeimg2 {
+    top: 81px;
+    left: 528px;
+    width: 434px;
+    height: 212px;
+    z-index: 5;
+    margin: 6px;
+}
+div#img2home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-image: url(https://images.unsplash.com/photo-1518976024611-28bf4b48222e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHw5fHxyZXNvdXJjZXN8ZW58MXx8fHwxNjI3OTgwNzUy&ixlib=rb-1.2.1&q=80&w=1080);
+    width: 434px;
+    height: 212px;
+    pointer-events: none;
+}
+div#homeimg3 {
+    top: 82px;
+    left: 982px;
+    width: 432px;
+    height: 211px;
+    z-index: 7;
+    margin: 6px;
+}
+
+div#img3home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-image: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwxNHx8c3RyYXRlZ3l8ZW58MXx8fHwxNjI4MDg2MzAy&ixlib=rb-1.2.1&q=80&w=1080);
+    width: 432px;
+    height: 211px;
+    pointer-events: none;
+}
+
+div#homeimg4 {
+    top: 314px;
+    left: 65px;
+    width: 899px;
+    height: 210px;
+    z-index: 49;
+    margin: 6px;
+}
+
+div#img4home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-image: url(https://images.unsplash.com/photo-1531403009284-440f080d1e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyfHxwbGFubmluZ3xlbnwxfHx8fDE2MjgwODYyNTU&ixlib=rb-1.2.1&q=80&w=1080);
+    width: 899px;
+    height: 207px;
+    pointer-events: none;
+}
+
+div#homeimg5 {
+    top: 313px;
+    left: 984px;
+    width: 436px;
+    height: 211px;
+    z-index: 10;
+    margin: 6px;
+}
+
+div#img5home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    padding: 10px;
+    border-radius: 0px;
+    border: 0px;
+    background-color: rgb(244, 244, 244);
+    width: 436px;
+    height: 211px;
+    pointer-events: none;
+}
+
+div#homeimg6 {
+    top: 544px;
+    left: 74px;
+    width: 434px;
+    height: 212px;
+    z-index: 28;
+    margin: 6px;
+}
+div#img6home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-image: url(https://images.unsplash.com/photo-1501769214405-5e5ee5125a02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwxNnx8YWJzdHJhY3R8ZW58MXx8fHwxNjI3OTg0NjY5&ixlib=rb-1.2.1&q=80&w=1080);
+    width: 434px;
+    height: 212px;
+    pointer-events: none;
+}
+div#homeimg7 {
+    top: 545px;
+    left: 528px;
+    width: 892px;
+    height: 210px;
+    z-index: 30;
+    margin: 6px;
+}
+
+div#img7home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-image: url(https://images.unsplash.com/photo-1527219525722-f9767a7f2884?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyMHx8U1RSQVRFR1l8ZW58MXx8fHwxNjI4MDg2MzMz&ixlib=rb-1.2.1&q=80&w=1080);
+    width: 892px;
+    height: 210px;
+    pointer-events: none;
+}
+
+
+div#pHome1 {
+    top: 102px;
+    left: 92px;
+    width: 396px;
+    height: 42px;
+    z-index: 11;
+}
+
+
+p#P1 {
+
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 42px;
+    pointer-events: auto;
+    top: -186px;
+    position: relative;
+    left: 28px;
+}
+
+div#ppHome1 {
+    top: 162px;
+    left: 92px;
+    width: 396px;
+    height: 50px;
+    z-index: 12;
+}
+
+p#Pp1 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    pointer-events: auto;
+    position: relative;
+    top: -157px;
+    left: 30px;
+}
+div#Dbuttonp1 {
+    top: 220px;
+    left: 92px;
+    width: 160px;
+    height: 42px;
+    z-index: 8;
+}
+
+button#button1 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -146px;
+    left: 28px;
+}
+
+
+div#pHome2 {
+    top: 102px;
+    left: 747px;
+    width: 197px;
+    height: 42px;
+    z-index: 16;
+}
+
+
+
+
+p#P2 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: right;
+    text-transform: none;
+    color: rgb(3, 3, 3);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 197px;
+    height: 42px;
+    pointer-events: auto;
+    top: -192px;
+    position: relative;
+    left: 213px;
+}
+
+
+
+
+div#ppHome2 {
+    top: 162px;
+    left: 546px;
+    width: 396px;
+    height: 50px;
+    z-index: 20;
+}
+
+
+
+p#Pp2 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: right;
+    text-transform: none;
+    color: rgb(3, 3, 3);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    pointer-events: auto;
+    position: relative;
+    top: -169px;
+}
+
+
+div#Dbuttonp2 {
+    top: 220px;
+    left: 782px;
+    width: 160px;
+    height: 42px;
+    z-index: 9;
+}
+
+button#button2 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(15, 98, 254);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(15, 98, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -149px;
+    left: 241px;
+}
+
+div#pHome3 {
+    top: 102px;
+    left: 1209px;
+    width: 189px;
+    height: 42px;
+    z-index: 24;
+}
+
+p#P3 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 189px;
+    height: 42px;
+    pointer-events: auto;
+    position: relative;
+    top: -193px;
+    left: 227px;
+}
+
+div#ppHome3 {
+    top: 162px;
+    left: 1002px;
+    width: 396px;
+    height: 50px;
+    z-index: 17;
+}
+
+p#Pp3 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    position: relative;
+    pointer-events: auto;
+    left: 23px;
+    top: -169px;
+}
+
+
+
+
+
+
+
+button#button3 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -149px;
+    left: 251px;
+}
+
+
+
+
+p#P4 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 42px;
+    pointer-events: auto;
+    position: relative;
+    top: -174px;
+    left: 28px;
+}
+
+p#Pp4 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    pointer-events: auto;
+    position: relative;
+    top: -159px;
+    left: 28px;
+}
+
+
+button#button4 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -146px;
+    left: 28px;
+}
+
+p#P5 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: right;
+    text-transform: none;
+    color: rgb(3, 3, 3);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 197px;
+    height: 42px;
+    pointer-events: auto;
+    top: -192px;
+    position: relative;
+    right: 4px;
+}
+
+p#Pp5 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: right;
+    text-transform: none;
+    color: rgb(3, 3, 3);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    pointer-events: auto;
+    position: relative;
+    right: 197px;
+    top: -169px;
+}
+
+
+button#button5 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(15, 98, 254);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(15, 98, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -149px;
+    left: 25px;
+}
+
+
+p#Pp6 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: right;
+    text-transform: none;
+    color: rgb(3, 3, 3);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    pointer-events: auto;
+    position: relative;
+    right: 25px;
+    top: -169px;
+}
+
+
+p#P6 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: right;
+    text-transform: none;
+    color: rgb(3, 3, 3);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 197px;
+    height: 42px;
+    pointer-events: auto;
+    top: -192px;
+    position: relative;
+    right: 4px;
+}
+
+button#button6 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(15, 98, 254);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(15, 98, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -149px;
+    left: 25px;
+}
+
+p#P7 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 42px;
+    pointer-events: auto;
+    position: relative;
+    top: -194px;
+    left: 28px;
+}
+
+p#Pp7 {
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    white-space: pre-line;
+    overflow: hidden;
+    width: 396px;
+    height: 50px;
+    pointer-events: auto;
+    position: relative;
+    top: -161px;
+    left: 28px;
+}
+
+button#button7 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 62px 10px 14px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 160px;
+    background-color: inherit;
+    position: relative;
+    top: -146px;
+    left: 28px;
+}

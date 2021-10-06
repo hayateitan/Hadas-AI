@@ -1,0 +1,71 @@
+
+#backgroundLogin{
+    background-image: url("../assets/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+div#fromLogin {
+   
+    margin: auto;
+    width: 347px;
+    height: 349px;
+    position: relative;
+    top: 145px;
+    z-index: 1;
+    background: white;
+    border-radius: 67px;
+}
+div#containerLogin {
+    position: relative;
+    top: 10px;
+    left: 79px;
+}
+.mb-3.input-group {
+    width: 189px;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid rgb(207 207 207);
+    right: 49px;
+    left: 27px;
+    margin: -18px;
+}
+input.form-control {
+    text-align: center;
+    background: rgb(244 244 244);
+}
+img#imglogin {
+    height: 186px;
+    width: 187px;
+    position: relative;
+    top: -6px;
+}
+
+p#textforgotlogin {
+    position: relative;
+    left:135px;
+    /* font-size: 14px; */
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(198 198 198);
+    top: -12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button#buttonlogin {
+    width: 99px;
+    height: 36px;
+    background: #efa7cd;
+    color: #ffffff;
+    border: 2px solid #b1c3d7;
+    border-radius: 8px;
+    position: relative;
+    top: -14px;
+    left: 41px;
+}
