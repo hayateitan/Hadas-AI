@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Form, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import CeluleFilter from './Celulefilter'
+import { v4 as uuidv4 } from 'uuid';
+
 
 const Explain = ({ id }) => {
 
@@ -19,18 +22,10 @@ const Explain = ({ id }) => {
         setTables(res.data)
     }
 
-
-
     const [column, setColumn] = useState();
-
-
     // this is a state for the choice of the table option 
     const [selectedT, setSelectedOptionT] = useState(null);
     console.log(`Tables Option selected :`, selectedT);
-
-
-
-
 
     const onTableauSelected = (tab) => {
         setSelectedOptionT(tab)
@@ -45,6 +40,25 @@ const Explain = ({ id }) => {
         } else {
             console.log('choisi une table ')
         }
+    }
+
+
+
+    const [celule, setCelule] = useState([])
+
+    const addCelule = () => {
+        console.log("add")
+        let newCelule = [...celule, { id: uuidv4(), type: "filter" }]
+        setCelule(newCelule)
+    }
+
+    const createCelule = (e) => {
+        console.log(e)
+        if (e.type === "filter") {
+            return <CeluleFilter id={e.id} key={e.id} />
+
+        }
+
     }
 
 
@@ -86,16 +100,21 @@ const Explain = ({ id }) => {
                         </Form.Select>
                     </div>
 
+
+                    {celule?.map(e => createCelule(e))}
+
+
                     <div id="iconPlus1Block" >
-                        <FontAwesomeIcon id="iconplus1" icon={faPlus} />
+                        <FontAwesomeIcon id="iconplus1" icon={faPlus} onClick={addCelule} />
 
                     </div>
 
+                    <div id="conatinerbuttonRun">
+                        <Button>Run!</Button>
+                    </div>
+                    
+                </div>
 
-                </div>
-                <div id="conatinerbuttonRun">
-                    <Button>Run!</Button>
-                </div>
             </div >
 
         </div >

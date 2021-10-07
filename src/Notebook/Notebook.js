@@ -9,7 +9,7 @@ import Editeur from './Editeur.js'
 import Explain from './Explain.js'
 import { v4 as uuidv4 } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar'
-import {  Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 
 const Notebook = () => {
 
@@ -43,8 +43,6 @@ const Notebook = () => {
         let newEditors = [...editors, { id: uuidv4(), type: "editor" }]
         setEditors(newEditors)
     }
-
-    //const [explain, setExplain] = useState([])
 
     const addExplain = () => {
         console.log("add explain")
@@ -96,10 +94,10 @@ const Notebook = () => {
 
 
             </div>
-
+            {/* 
             <div id="conatinerbuttonSauvegarde">
                 <Button>Backup</Button>
-            </div>
+            </div> */}
 
             <div id="divSetDisplaynone" >
                 <div id="editeur-de-code">
