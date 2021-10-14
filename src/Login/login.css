@@ -1,23 +1,49 @@
 
 #backgroundLogin{
-    background-image: url("../assets/background.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url(https://demos.creative-tim.com/notus-react/static/media/register_bg_2.4f2cb0ac.png); */
+    /* background-position: inherit; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
     height: 100vh;
+    /* --tw-bg-opacity: 1; */
+    /* background-color: rgba(79,33,131,var(--tw-bg-opacity)); */
+    background: #0818278c;
+
 }
 
 
-div#fromLogin {
-   
+input#formBasicEmail {
+    height: 44px;
+    padding: 12px;
+}
+
+input#formBasicPassword {
+    height: 44px;
+    padding: 12px;
+}
+
+form#formlogin {
+    position: relative;
+    right: 76px;
+    width: 344px;
     margin: auto;
-    width: 347px;
-    height: 349px;
+    top: 65px;
+}
+
+label.form-check-label {
+    color: #fcfdfd;
+    font-size: 14px;
+}
+
+div#fromLogin {
+    margin: auto;
+    width: 379px;
+    height: 461px;
     position: relative;
     top: 145px;
     z-index: 1;
-    background: white;
-    border-radius: 67px;
+    background: #081827;
+    border-radius: 11px;
 }
 div#containerLogin {
     position: relative;
@@ -38,10 +64,10 @@ input.form-control {
     background: rgb(244 244 244);
 }
 img#imglogin {
-    height: 186px;
-    width: 187px;
+    height: 97px;
+    width: 220px;
     position: relative;
-    top: -6px;
+    top: 27px;
 }
 
 p#textforgotlogin {
@@ -59,13 +85,16 @@ a {
 }
 
 button#buttonlogin {
-    width: 99px;
-    height: 36px;
-    background: #efa7cd;
-    color: #ffffff;
-    border: 2px solid #b1c3d7;
-    border-radius: 8px;
-    position: relative;
-    top: -14px;
-    left: 41px;
+    width: 344px;
+    height: 44px;
+    font-family: inherit;
+    line-height: 1.25rem;
+    font-weight: 700;
+    background: #072037;
+    border-color: #072037;
+}
+
+
+label.form-label {
+    color: #fcfcfd;
 }

@@ -6,10 +6,16 @@ import { faFont } from '@fortawesome/free-solid-svg-icons'
 import { faGlasses } from '@fortawesome/free-solid-svg-icons'
 import { faChartLine } from '@fortawesome/free-solid-svg-icons'
 import Editeur from './Editeur.js'
-import Explain from './Explain.js'
+import Explain from './Predict.js'
 import { v4 as uuidv4 } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar'
-// import { Button } from 'react-bootstrap';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+
+
+
+
+
+
 
 const Notebook = () => {
 
@@ -99,20 +105,103 @@ const Notebook = () => {
                 <Button>Backup</Button>
             </div> */}
 
-            <div id="divSetDisplaynone" >
-                <div id="editeur-de-code">
 
 
-                    {editors?.map(e => createEditor(e))}
-                    {editors?.map(e => logEditor(e))}
+       
+                        <div id="divSetDisplaynone" >
+                            <div id="editeur-de-code">
 
-                </div>
+
+                                {editors?.map(e => createEditor(e))}
+                                {editors?.map(e => logEditor(e))}
+
+                            </div>
 
 
-            </div>
-
+                        </div>
+              
         </PerfectScrollbar>
     )
 }
 
 export default Notebook
+
+
+
+// const finalSpaceNotebook = [
+//     {
+//         id: 'gary',
+//         name: 'Gary Goodspeed',
+//         thumb: '/images/gary.png'
+//     },
+//     {
+//         id: 'cato',
+//         name: 'Little Cato',
+//         thumb: '/images/cato.png'
+//     },
+//     {
+//         id: 'kvn',
+//         name: 'KVN',
+//         thumb: '/images/kvn.png'
+//     },
+//     {
+//         id: 'mooncake',
+//         name: 'Mooncake',
+//         thumb: '/images/mooncake.png'
+//     },
+//     {
+//         id: 'quinn',
+//         name: 'Quinn Ergon',
+//         thumb: '/images/quinn.png'
+//     }
+// ]
+
+// function App() {
+//     const [noteBook, updateNotebook] = useState(finalSpaceNotebook);
+
+//     function handleOnDragEnd(result) {
+//         if (!result.destination) return;
+
+//         const items = Array.from(noteBook);
+//         const [reorderedItem] = items.splice(result.source.index, 1);
+//         items.splice(result.destination.index, 0, reorderedItem);
+
+//         updateNotebook(items);
+//     }
+
+//     return (
+//         <div className="App">
+//             <header className="App-header">
+              
+//                 <DragDropContext onDragEnd={handleOnDragEnd}>
+//                     <Droppable droppableId="notebook">
+//                         {(provided) => (
+//                             <ul className="notebook" {...provided.droppableProps} ref={provided.innerRef}>
+//                                 {noteBook.map(({ id, name, thumb }, index) => {
+//                                     return (
+//                                         <Draggable key={id} draggableId={id} index={index}>
+//                                             {(provided) => (
+//                                                 <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+//                                                     <div className="characters-thumb">
+//                                                         <img src={thumb} alt={`${name} Thumb`} />
+//                                                     </div>
+//                                                     <p>
+//                                                         {name}
+//                                                     </p>
+//                                                 </li>
+//                                             )}
+//                                         </Draggable>
+//                                     );
+//                                 })}
+//                                 {provided.placeholder}
+//                             </ul>
+//                         )}
+//                     </Droppable>
+//                 </DragDropContext>
+//             </header>
+          
+//         </div>
+//     );
+// }
+
+// export default App;

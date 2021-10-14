@@ -1,8 +1,10 @@
+
+
 import React, { useRef } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import './style.css'
 
-export default function Editeur({id}) {
+export default function Editeur({ id }) {
 
   const editorRef = useRef(null);
 
@@ -10,7 +12,7 @@ export default function Editeur({id}) {
 
   return (
 
-    <div id={"mydiv_"+id} >
+    <div id={"mydiv_" + id} >
       <Editor
         apiKey='9wnzsan1yrwcv5dpqtiwb1wz538yfoegkqhzpijcgqc2z9us' init={{ /* your other settings */ }}
         onInit={(evt, editor) => editorRef.current = editor}
@@ -18,7 +20,6 @@ export default function Editeur({id}) {
           height: 250,
           menubar: false,
           placeholder: "Type here...",
-        
           plugins: [
             'advlist autolink lists link image charmap print preview anchor',
             'searchreplace visualblocks code fullscreen',

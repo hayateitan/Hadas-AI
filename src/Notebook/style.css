@@ -235,118 +235,104 @@ div#Messages2photo {
 }
  */
 
-
-
 .tox.tox-tinymce {
-    position: relative;
-    width: 1013px;
-    margin: auto;
-    top: 92px;
-    border: 2px solid transparent;
-    right: 69px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
-    border-radius: 7px;
-    margin-bottom: 15px;
+	position: relative;
+	width: 1013px;
+	margin: auto;
+	top: 92px;
+	border: 2px solid transparent;
+	right: 69px;
+	box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+	border-radius: 7px;
+	margin-bottom: 50px;
 }
 
 .tox-statusbar {
-    visibility: hidden;
+	visibility: hidden;
 }
 
-
 div#iconPlus1Notebok {
-    position: relative;
-    left: 145px;
-    top: 112px;
-    width: 35px;
-    height: 20px;
+	position: relative;
+	left: 145px;
+	top: 112px;
+	width: 35px;
+	height: 20px;
 }
 
 svg#iconplus1 {
-    height: 25px;
-    width: 21px;
-    position: relative;
-    top: -3px;
-    color: black;
+	height: 25px;
+	width: 21px;
+	position: relative;
+	top: -3px;
+	color: #1c383d;
 }
 
-
-
 div#iconPlus2Notebok {
-    position: relative;
-    left: 175px;
-    top: 90px;
-    width: 35px;
-    height: 20px;
+	position: relative;
+	left: 175px;
+	top: 90px;
+	width: 35px;
+	height: 20px;
 }
 
 svg#iconcode1 {
-    height: 24px;
-    width: 31px;
-    color: black;
+	height: 24px;
+	width: 31px;
+	color: #1c383d;
 }
-
 
 div#textblock {
-    width: max-content;
-    left: 32px;
-    top: 32px;
+	width: max-content;
+	left: 32px;
+	top: 32px;
 }
-
 
 div#containerselect {
-    position: relative;
-    left: 145px;
-    width: 1013px;
-    height: 536px;
-    z-index: 23;
-    background: #ffffff;
-    top: 115px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
-    border-radius: 7px;
-    margin-bottom: 50px;
-}
-
-svg#iconcode2 {
-    width: 25px;
-    height: 20px;
-    font-size: 20px;
-    color: black;
+	position: relative;
+	left: 145px;
+	width: 1013px;
+	height: 162px;
+	z-index: 23;
+	background: #ffffff;
+	top: 150px;
+	box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+	border-radius: 7px;
+	margin-bottom: 105px;
 }
 
 div#mydiv {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 div#iconPlus3Notebok {
-    position: relative;
-    top: 69px;
-    left: 220px;
-    width: 35px;
-    height: 20px;
+	position: relative;
+	top: 69px;
+	left: 220px;
+	width: 35px;
+	height: 20px;
 }
 
 svg#iconplus3 {
-    height: 25px;
-    width: 23px;
-    color: black;
+	height: 25px;
+	width: 23px;
+	color: #1c383d;
 }
 h6#titreblockexplain {
-    position: relative;
-    top: 9px;
-    left: 10px;
-    color: #0000008c;
+	position: relative;
+	top: 9px;
+	left: 10px;
+	color: #0000008c;
 }
-
 select.form-select {
     width: 118px;
     height: 40px;
+    color: white;
+    background: #082e40;
 }
-
 div#Buttonchainecontainer {
     display: grid;
-    width: 747px;
-    grid-template-columns: 7px 7px 7px 7px 7px 7px 7px 7px;
+    width: 269px;
+    grid-template-columns: 10px 10px 10px;
     align-items: start;
     justify-content: space-between;
     position: relative;
@@ -354,37 +340,102 @@ div#Buttonchainecontainer {
     left: 73px;
 }
 
-
 div#conatinerbuttonRun {
-    width: fit-content;
-    position: relative;
-    right: 56px;
-    top: 0px;
+	width: fit-content;
+	position: relative;
+	right: 0px;
+	left: 850px;
+	top: 21px;
 }
 
 button.btn.btn-primary {
-    background: black;
-    border-color: black;
+    background: #082e40;
+    border-color: #082e40;
     width: 75px;
     height: 40px;
     font-family: 'Fira Code', monospace;
 }
 
-
-.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary {
-   background-color: blue;
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary {
+	background-color: blue;
 }
 div#iconPlus1Block {
-    position: relative;
-    left: 21px;
-    top: 12px;
-    height: 21px;
-    width: 25px;
+	position: relative;
+	left: 21px;
+	top: 12px;
+	height: 21px;
+	width: 25px;
 }
 
-
 div#conatinerbuttonSauvegarde {
+	position: relative;
+	left: 258px;
+	top: 32px;
+}
+
+button#buttonFilter {
+    background: #082e40;
+    width: 118px;
+    height: 40px;
+    border: 1px solid #ced4da;
+    color: #ffffff;
+}
+.modal-body {
+	display: grid;
+	width: 967px;
+	grid-template-columns: 7px 7px 7px 7px 7px 7px 7px 7px;
+	align-items: start;
+	justify-content: space-between;
+	position: relative;
+	top: 3px;
+	left: 73px;
+	height: 98px;
+}
+
+#nameOfblockPredict {
+	width: 189px;
+	border-radius: 0px;
+	border: 0px solid rgb(255 255 255);
+	left: 19px;
+	margin: -18px;
+	position: relative;
+	top: -36px;
+	background: white;
+    text-align: inherit;
+}
+.modal-content {
+    height: 1000px;
+    top: 43px;
+}
+
+button#ButtonSaveFilter {
     position: relative;
-    left: 258px;
-    top: 32px;
+    top: 860px;
+    left: 961px;
+}
+
+.card {
+    top: 34px;
+    right: 58px;
+    height: 250px;
+}
+
+input#nameOfblockPredictfilter {
+    width: 189px;
+    border-radius: 0px;
+    /* border: 1px solid rgb(108 117 125); */
+    left: 1px;
+    margin: -18px;
+    position: relative;
+    top: -36px;
+    background: #9e9e9e08;
+    text-align: inherit;
+}
+
+div#cardFilter {
+    right: 146px;
+    margin-bottom: 73px;
+    top: 81px;
 }

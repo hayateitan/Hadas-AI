@@ -1,155 +1,90 @@
-import React from 'react'
-import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Form, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFont } from '@fortawesome/free-solid-svg-icons'
-import { faGlasses } from '@fortawesome/free-solid-svg-icons'
-import { faChartLine } from '@fortawesome/free-solid-svg-icons'
-import { Form ,Button} from 'react-bootstrap';
-import { Link } from "react-router-dom";
-const Predict = () => {
-
-    // useEffect(() => {
-    //     timer = setTimeout(mafonction, 5000);
-    // }, [])
-
-    // function mafonction() {
-    //     document.getElementById("editeur-de-code").style.visibility = "collapse"
-    // }
-
-    // function onMouseOver() {
-    //     clearTimeout(timer)
-    //     document.getElementById("editeur-de-code").style.visibility = "visible"
-    //     timer = setTimeout(mafonction, 5000);
-    // }
-
-    // let timer
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import CeluleFilter from './Celulefilter'
+import { v4 as uuidv4 } from 'uuid';
 
 
-    let history = useHistory();
-    let token = sessionStorage.getItem('jwt');
-    if (token === null || token === undefined) {
-        history.push("/login");
+const Predict = ({ id }) => {
+
+    useEffect(() => {
+        getAllTables();
+
+    }, []);
+
+
+    const [tables, setTables] = useState();
+
+    const getAllTables = async () => {
+        const res = await axios.get(`http://localhost:3002/recuperetableaux`)
+        setTables(res.data)
+    }
+
+    const [column, setColumn] = useState();
+    // this is a state for the choice of the table option 
+    const [selectedT, setSelectedOptionT] = useState(null);
+    console.log(`Tables Option selected :`, selectedT);
+
+    const onTableauSelected = (tab) => {
+        setSelectedOptionT(tab)
+        if (tab !== null) {
+            axios.post(`http://localhost:3002/recupereColumn`, { Tableau: tab })
+                .then((res) => {
+                    console.log(res);
+                    setColumn(res.data)
+
+                });
+            console.log('tableau envoyer' + tab)
+        } else {
+            console.log('choisi une table ')
+        }
     }
 
 
 
 
+  
+
+
+    // const [celule, setCelule] = useState([])
+
+    // const addCelule = () => {
+    //     console.log("add")
+    //     let newCelule = [...celule, { id: uuidv4(), type: "filter" }]
+    //     setCelule(newCelule)
+    // }
+
+    // const createCelule = (e) => {
+    //     console.log(e)
+    //     if (e.type === "filter") {
+    //         return <CeluleFilter id={e.id} key={e.id} />
+
+    //     }
+
+    // }
+
+
+
     return (
-        <div>
+        <div id={'blockNotebook_' + id}>
 
-            {/* <div id="containerPrincipalMessagesNotebook1">
-                <div id="containerPrincipalMessagesNotebook2">
-
-                    <div id="Messages1">
-                        <div id="MessagesI1">
-                            <div id="photoMessages1">
-                                <div id="Messages1photo">
-                                    <div id="iconCroie">
-                                        <div >
-                                            <FontAwesomeIcon id="iconcroie" icon={faTimes} />
-                                        </div>
-                                        <div id="textMessages1">
-                                            <p id="pmessages1">
-                                                Nice job @Maya A. <br />
-                                                In Haroe the genius feeling doesn't go away BTW.
-                                            </p>
-                                        </div>
-                                        <div id="iconMessagesnotebook">
-                                            <FontAwesomeIcon id="iconMessagesnotebook1" icon={faCommentDots} />
-                                        </div>
-                                        <div id="iconMessagesnotebook">
-                                            <FontAwesomeIcon id="iconMessagesnotebook2" icon={faThumbsUp} />
-                                        </div>
-                                        <div id="Nom">
-                                            <p id="nomp">
-                                                David F.
-                                            </p>
-                                        </div>
-                                        <div id="datemessage">
-                                            <p id="date">
-                                                30.07.21
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="Messages2">
-                        <div id="MessagesII2">
-                            <div id="photoMessages2">
-                                <div id="Messages2photo">
-                                    <div id="iconCroie">
-                                        <div >
-                                            <FontAwesomeIcon id="iconcroie" icon={faTimes} />
-                                        </div>
-                                        <div id="textMessages1">
-                                            <p id="pmessages1">
-                                                Think we should investigate the <br /> boost in sales of coats and boots <br /> in the last week of August. I'll do <br /> code-based data exploration on<br />  my side. Expect PR soon
-                                            </p>
-                                        </div>
-                                        <div id="iconMessagesnotebook2">
-                                            <FontAwesomeIcon id="iconMessagesnotebook1" icon={faCommentDots} />
-                                        </div>
-                                        <div id="iconMessagesnotebook">
-                                            <FontAwesomeIcon id="iconMessagesnotebook2" icon={faThumbsUp} />
-                                        </div>
-                                        <div id="Nom">
-                                            <p id="nomp">
-                                                Andre D.
-                                            </p>
-                                        </div>
-                                        <div id="datemessage">
-                                            <p id="date">
-                                                01.08.21
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div> */}
-
-            <div id="iconPlus2Notebok" >
-                <Link to="/Explain"  >
-                    <FontAwesomeIcon id="iconcode1" icon={faGlasses} />
-
-                </Link>
-
-
-            </div>
-            <div id="iconPlus1Notebok" >
-
-                <Link to="/Notebook"  >
-                    <FontAwesomeIcon id="iconplus1" icon={faFont} />
-
-                </Link>
-
-            </div>
-            <div id="iconPlus3Notebok" >
-
-                <Link to="/Predict"  >
-                    <FontAwesomeIcon id="iconplus3" icon={faChartLine} />
-                </Link>
-
-            </div>
-
-            {/* <div id="divSetDisplaynone" onMouseOver={onMouseOver}>
-                <div id="editeur-de-code">
-                    <p>
-
-                        {editors.map(e => <div ><Editeur key={e.id} /></div>)}<br />
-                    </p>
-                </div>
-            </div> */}
 
             <div id="containerselect">
+                <div id={"nameOfblock" + id} >
 
-                {/* <div id="iconcodecontainercelule"><FontAwesomeIcon id="iconcode2" icon={faCode} /></div> */}
+                    <FormControl
+                        aria-label="Default"
+                        aqria-describedby="inputGroup-sizing-default"
+                        placeholder="Block Name"
+                        id="nameOfblockPredict"
+                    />
+
+
+
+                </div>
+
                 <div id="textblock">
                     <h6 id="titreblockexplain">Predict</h6>
                 </div>
@@ -157,46 +92,56 @@ const Predict = () => {
                 <div id="Buttonchainecontainer">
 
                     <div id="buttonChaineNumero1">
-                        <Form.Select>
-                            <option>Table </option>
+
+                        <Form.Select onChange={(e) => onTableauSelected(e.target.value)}>
+                            {
+                                tables?.map(
+                                    t => (
+                                        <option key={t.Tables_in_tableharoe}>{t.Tables_in_tableharoe} </option>
+                                    )
+                                )
+                            }
                         </Form.Select>
+
                     </div>
 
                     <div id="buttonChaineNumero2">
                         <Form.Select>
-                            <option>Column</option>
+                            {
+                                column?.map(
+                                    t => (
+                                        <option key={t.COLUMN_NAME}>{t.COLUMN_NAME} </option>
+                                    )
+                                )
+                            }
                         </Form.Select>
                     </div>
 
-                    <div id="buttonChaineNumero3">
-                        <Form.Select>
-                            <option>Filter 1</option>
-                        </Form.Select>
+
+                    {/* {celule?.map(e => createCelule(e))} */}
+
+
+                    {/* <div id="iconPlus1Block" >
+                        <FontAwesomeIcon id="iconplus1" icon={faPlus} onClick={addCelule} />
+
+                    </div> */}
+
+                    <div id="buttonmodalcelule">
+                        <CeluleFilter  />
                     </div>
 
-                    <div id="buttonChaineNumero4">
-                        <Form.Select>
-                            <option> Filter 2</option>
-                        </Form.Select>
-                    </div>
-
-                    <div id="buttonChaineNumero5">
-                        <Form.Select>
-                            <option> Filter 3</option>
-                        </Form.Select>
+                    <div id="conatinerbuttonRun">
+                        <Button>Run!</Button>
                     </div>
 
                 </div>
-                <div id="conatinerbuttonRun">
-                    <Button>Run!</Button>
-                </div>
-            </div>
 
+            </div >
 
-
-        </div>
+        </div >
     )
-
 }
+
+
 
 export default Predict

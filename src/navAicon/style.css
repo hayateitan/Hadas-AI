@@ -4,114 +4,113 @@
     width: auto;
 } */
 div#navIcon {
-    position: relative;
-    display: grid;
-    top: 84px;
-    left: 20px;
-    z-index: 99;
-    font-size: 20px;
+	position: relative;
+	display: grid;
+	top: 114px;
+	left: 20px;
+	z-index: 99;
+	font-size: 20px;
 }
 div#containericon {
-    position: fixed;
-    
+	position: fixed;
 }
 
 svg#icon {
-    width: 25px;
-    height: 20px;
+	width: 25px;
+	height: 20px;
 }
 
 div#navbarScroll {
-    flex-grow: 1;
-    align-items: center;
+	flex-grow: 1;
+	align-items: center;
 }
 #navbarCss {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    background: rgb(3 3 3);
-    top: -8px;
-    width: auto;
-    background: black;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background: rgb(3 3 3);
+	top: -8px;
+	width: auto;
+	background: black;
 }
 
 img#imgNavbar {
-    width: 31px;
-    height: 45px;
-    top: 4px;
-    left: 10px;
-    position: relative;
+	width: 31px;
+	height: 45px;
+	top: 4px;
+	left: 10px;
+	position: relative;
 }
-
 input#searchnavbar {
     width: 480px;
     height: 45px;
     color: rgb(198, 198, 198);
-    background: rgb(38, 38, 38);
-    border: rgb(38, 38, 38);
+    background: #082e40;
+    border: #082e40;
 }
-
-
 svg#iconnavbar {
-    display: block;
-    color: rgb(198, 198, 198);
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    top: 0px;
-    left: 1px;
-   
+	display: block;
+	color: rgb(198, 198, 198);
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	left: 1px;
 }
 button.btn.btn-outline-success {
-    position: relative;
-    top: 2px;
-    left: -49px;
-    background: #f0f8ff00;
-    border: #f0f8ff00;
+	position: relative;
+	top: 2px;
+	left: -49px;
+	background: #f0f8ff00;
+	border: #f0f8ff00;
 }
 div#iconnavbar2 {
-    color: white;
-    position: relative;
-    right: 36px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
+	color: white;
+	position: relative;
+	right: 36px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
 }
 svg#iconnavbar1 {
-    position: relative;
-    
+	position: relative;
 }
 svg#iconnavbar2 {
-    position: relative;
-    right: 35px;
-    top: -29px;
+	position: relative;
+	right: 35px;
+	top: -29px;
 }
 
 svg#iconnavbar3 {
-    position: relative;
-    right: 74px;
-    top: -57px;
+	position: relative;
+	right: 74px;
+	top: -57px;
 }
 form.d-flex {
-    position: relative;
-    top: 3px;
-    left: 422px;
+	position: relative;
+	top: 3px;
+	left: 343px;
 }
 svg#icon {
-    text-decoration: none;
-    color: initial;
-}
-
-
-img#logoNavbar {
-    width: 31px;
-    height: 45px;
+	text-decoration: none;
+	color: #263f56;
 }
 
 nav#main-nav {
-    background: black;
+	background: #f1f3f2;
+	height: 73px;
+}
+
+svg.svg-inline--fa.fa-pen.fa-w-16.fa-lg {
+	color: #23425e;
+}
+svg.svg-inline--fa.fa-bell.fa-w-14.fa-lg {
+	color: #23425e;
+}
+svg.svg-inline--fa.fa-user.fa-w-14.fa-lg {
+	color: #23425e;
 }

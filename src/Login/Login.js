@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import { InputGroup, FormControl, Button } from 'react-bootstrap';
+import { InputGroup, FormControl, Button, Form } from 'react-bootstrap';
 import './login.css';
 import Logo from '../assets/logoLogin.png'
 import axios from 'axios';
@@ -9,12 +9,12 @@ import server from "../Config";
 
 const Login = (props) => {
 
-    
+
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     console.log(password)
 
-   
+
 
 
     const doSubmit = () => {
@@ -25,7 +25,7 @@ const Login = (props) => {
                     sessionStorage.setItem("jwt", res.data);
                     props.history.push("/Home");
                 } else {
-                    
+
                     console.log('erreur')
                 }
             });
@@ -33,21 +33,31 @@ const Login = (props) => {
 
     return (
         <div id="backgroundLogin">
-            <div id="fromLogin">
-                <div id="containerLogin">
-                    <img id="imglogin" src={Logo} />
-                    <InputGroup className="mb-3">
-                        <FormControl aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder='Username' required onChange={(e) => setUsername(e.target.value)} />
-                    </InputGroup>
-                    <InputGroup className="mb-3">
-                        <FormControl aria-label="Default" aria-describedby="inputGroup-sizing-default" type="password" required placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
-                    </InputGroup>
-                    <Link to="/Forgot"  >
-                        <p id="textforgotlogin">  Forgot?</p>
 
-                    </Link>
-                    <Button id="buttonlogin" onClick={doSubmit}> Send</Button>
-                    {/* <div ><p style='color:red' id="passwordfalse">Utilisateur ou mot de passe incorrect</p></div> */}
+            <div id="fromLogin">
+
+                <div id="containerLogin">
+
+                    <img id="imglogin" src={Logo} />
+
+                    <Form id="formlogin">
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email </Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <FormControl aria-label="Default" aria-describedby="inputGroup-sizing-default" type="password" required placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Check type="checkbox" label="Remember me" />
+                        </Form.Group>
+                        <Button variant="primary" type="submit" id="buttonlogin" onclick={doSubmit}>
+                        Sign In
+                        </Button>
+                    </Form>
+
                 </div>
             </div>
         </div>
