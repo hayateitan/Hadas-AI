@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from "react-router-dom";
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,16 +9,22 @@ import Editeur from './Editeur.js'
 import Explain from './Explain.js'
 import { v4 as uuidv4 } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import { useDispatch } from "react-redux";
+import { test } from '../actions/testaction'
 // import { Button } from 'react-bootstrap';
 
 const Notebook = () => {
-
+    const dispath = useDispatch();
 
     let history = useHistory();
     let token = sessionStorage.getItem('jwt');
     if (token === null || token === undefined) {
         history.push("/login");
     }
+
+    useEffect(() => {
+        dispath(test("eitan"))
+    },[])
 
     // useEffect(() => {
     //     timer = setTimeout(mafonction, 3000);
