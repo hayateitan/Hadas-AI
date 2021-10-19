@@ -15,10 +15,7 @@ div#containericon {
 	position: fixed;
 }
 
-svg#icon {
-	width: 25px;
-	height: 20px;
-}
+
 
 div#navbarScroll {
 	flex-grow: 1;
@@ -68,36 +65,24 @@ button.btn.btn-outline-success {
 	background: #f0f8ff00;
 	border: #f0f8ff00;
 }
-div#iconnavbar2 {
-	color: white;
-	position: relative;
-	right: 36px;
-	width: 20px;
-	height: 20px;
-	font-size: 20px;
-}
-svg#iconnavbar1 {
-	position: relative;
-}
-svg#iconnavbar2 {
-	position: relative;
-	right: 35px;
-	top: -29px;
-}
 
-svg#iconnavbar3 {
-	position: relative;
-	right: 74px;
-	top: -57px;
-}
+
+
 form.d-flex {
 	position: relative;
 	top: 3px;
 	left: 343px;
 }
 svg#icon {
-	text-decoration: none;
-	color: #263f56;
+	width: 30px;
+    height: 33px;
+    text-decoration: none;
+    color: #263f56;
+}
+
+svg#iconSlack {
+    width: 30px;
+    height: 33px;
 }
 
 nav#main-nav {
@@ -113,4 +98,9 @@ svg.svg-inline--fa.fa-bell.fa-w-14.fa-lg {
 }
 svg.svg-inline--fa.fa-user.fa-w-14.fa-lg {
 	color: #23425e;
+}
+a.navbar-brand {
+    position: absolute;
+    left: 17px;
+    /* right: -8px; */
 }

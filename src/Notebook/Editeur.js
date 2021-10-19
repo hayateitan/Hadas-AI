@@ -1,14 +1,21 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
+import { useDispatch } from "react-redux";
 import './style.css'
 
 export default function Editeur({ id }, { initialValue }) {
 
   const editorRef = useRef(null);
-
+  const dispatch = useDispatch();
 
   const [value, setValue] = useState(initialValue ?? '');
   console.log(value)
+
+  const updateValue = (value) => {
+    setValue(value)
+    dispatch({type:"UPDATE_EDITOR_VALUE", payload:{id: id, value: value}})
+  }
+
   return (
 
     <div id={"mydiv_" + id} >

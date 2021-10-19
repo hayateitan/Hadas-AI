@@ -1,3 +1,3 @@
-const server = 'http://localhost:3001';
+const server = 'http://localhost:8090/api';
 
 export default server;

@@ -3,12 +3,15 @@ import { produce } from "immer";
 const reducer = produce((draft, action) => {
   const { type, payload } = action;
   switch (type) {
-    case "TEST": 
-        alert("hello " + payload.name)
-        draft.test = payload.name
-        break;
+    case "ADD_EDITOR_VALUE":
+      draft.editors[payload.id] = payload.value
+      break;
+    case "TEST":
+      alert("hello " + payload.name)
+      draft.test = payload.name
+      break;
     default:
-        break;
+      break;
   }
 });
 

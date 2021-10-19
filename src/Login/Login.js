@@ -17,8 +17,9 @@ const Login = (props) => {
 
 
 
-    const doSubmit = () => {
-        axios.post(`${server}/login`, { UserName: username, Password: password, })
+    const doSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${server}/login`, { LoginName: username, LoginPassword: password, })
             .then((res) => {
                 console.log(res);
                 if (res.status === 200) {
@@ -40,10 +41,10 @@ const Login = (props) => {
 
                     <img id="imglogin" src={Logo} />
 
-                    <Form id="formlogin">
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form id="formlogin" onSubmit={doSubmit}>
+                        <Form.Group className="mb-3" >
                             <Form.Label>Email </Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Control type="text" placeholder="Enter email" />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -53,7 +54,7 @@ const Login = (props) => {
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Remember me" />
                         </Form.Group>
-                        <Button variant="primary" type="submit" id="buttonlogin" onclick={doSubmit}>
+                        <Button variant="primary" type="submit" id="buttonlogin" >
                         Sign In
                         </Button>
                     </Form>

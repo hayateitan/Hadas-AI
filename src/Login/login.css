@@ -1,13 +1,12 @@
 
 #backgroundLogin{
-    /* background-image: url(https://demos.creative-tim.com/notus-react/static/media/register_bg_2.4f2cb0ac.png); */
-    /* background-position: inherit; */
-    /* background-repeat: no-repeat; */
-    /* background-size: contain; */
+    background-image: url('../assets/backgroundlogin5.jpeg'); 
+    background-repeat: no-repeat;
+   background-size: cover;
     height: 100vh;
     /* --tw-bg-opacity: 1; */
     /* background-color: rgba(79,33,131,var(--tw-bg-opacity)); */
-    background: #0818278c;
+    /* background: #0818278c; */
 
 }
 

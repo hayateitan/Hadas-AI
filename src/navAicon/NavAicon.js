@@ -1,14 +1,13 @@
 import React from 'react'
 import './style.css';
 import { Link } from "react-router-dom";
-import { faList } from '@fortawesome/free-solid-svg-icons'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faCoins } from '@fortawesome/free-solid-svg-icons'
-import { faCloud } from '@fortawesome/free-solid-svg-icons'
-import { faFileUpload } from '@fortawesome/free-solid-svg-icons'
-import { faUserFriends } from '@fortawesome/free-solid-svg-icons'
-import { faComments } from '@fortawesome/free-solid-svg-icons'
+import { UilListUl } from '@iconscout/react-unicons'
+import { UilDesktop } from '@iconscout/react-unicons'
+import { UilBooks } from '@iconscout/react-unicons'
+import { UilDatabase } from '@iconscout/react-unicons'
+import { UilCloud } from '@iconscout/react-unicons'
+import { UilFileUpload } from '@iconscout/react-unicons'
+import { Icon } from '@iconify/react';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
@@ -19,35 +18,36 @@ import { Navbar, Nav, FormControl, Button, Form, Container } from 'react-bootstr
 
 const NavAicon = () => {
 
-   
+
 
     return (
         <div id="containerprincipalnotebook">
 
-           <div id="containericon">
+            <div id="containericon">
                 <div id="navIcon">
 
-                    <FontAwesomeIcon id="icon" icon={faList} />
+                    <UilListUl id="icon" />
                     <br />
                     <Link to="/Home"  >
-                        <FontAwesomeIcon id="icon" icon={faHome} />
+                        <UilDesktop id="icon" />
                     </Link>
                     <br />
                     <Link to="/Notebook"  >
-                        <FontAwesomeIcon id="icon" icon={faPlus} />
+                        <UilBooks id="icon" />
+
                     </Link>
                     <br />
-                    <FontAwesomeIcon id="icon" icon={faCoins} />
+                    <UilDatabase id="icon" />
                     <br />
-                    <FontAwesomeIcon id="icon" icon={faCloud} />
+                    <UilCloud id="icon" />
+
                     <br />
-                    <FontAwesomeIcon id="icon" icon={faFileUpload} />
+                    <UilFileUpload id="icon" />
+
                     <br />
-                    <FontAwesomeIcon id="icon" icon={faUserFriends} />
-                    <br />
-                    <FontAwesomeIcon id="icon" icon={faComments} />
+                    <Icon icon="grommet-icons:slack" id="iconSlack" />
                 </div>
-             </div> 
+            </div>
 
 
             <div id="containerNavbar">

@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import { v4 as uuidv4 } from 'uuid';
 import BlockFilter from './BlockFilter'
-import PerfectScrollbar from 'react-perfect-scrollbar'
+import { UilFocusAdd } from '@iconscout/react-unicons'
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 const Celulefilter = () => {
@@ -61,15 +61,16 @@ const Celulefilter = () => {
                 show={xlgShow}
                 onHide={() => setXlgShow(false)}
                 aria-labelledby="example-modal-sizes-title-xlg"
-      
+                scrollable={true}
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="example-modal-sizes-title-xlg">
-                        Large Modal
+                        Filter
+                        <UilFocusAdd id="addfilter" onClick={addFilter} />
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Button onClick={addFilter}>ss</Button>
+
 
                     <div id="divSetDisplaynone" >
 

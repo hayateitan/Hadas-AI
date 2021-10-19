@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFont } from "@fortawesome/free-solid-svg-icons";
-import { faGlasses } from "@fortawesome/free-solid-svg-icons";
-import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Editeur from "./Editeur.js";
 import Explain from "./Predict.js";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { Button, Popover, OverlayTrigger } from 'react-bootstrap'
+import { UilPlusCircle } from '@iconscout/react-unicons'
+
 import { v4 as uuidv4 } from "uuid";
 
 function BlockCode(props) {
@@ -16,7 +15,40 @@ function BlockCode(props) {
   const [editors, setEditors] = useState([]);
 
 
+  useEffect(() => {
+    timer = setTimeout(onMouseOver, 3000);
+  }, [])
 
+
+  function onMouseOver() {
+    document.getElementById("iconhoverlay").style.width = "30px"
+  }
+
+  function changeWidth() {
+    clearTimeout(timer)
+    document.getElementById("iconhoverlay").style.width = "40px"
+    timer = setTimeout(onMouseOver, 3000);
+  }
+
+  let timer
+
+  const renderTooltip = (props) => (
+    <Popover  {...props}>
+      <Popover.Body>
+        <div id="iconPlus1Notebok" >
+          <p id="iconplus1" onClick={addEditor}>Editor</p>
+        </div>
+
+        <div id="iconPlus2Notebok" >
+          <p id="iconcode1" onClick={addPredict}>Predict</p>
+        </div>
+
+        <div id="iconPlus3Notebok">
+          <p id="iconplus3">Explain</p>
+        </div>
+      </Popover.Body>
+    </Popover>
+  );
 
   function handleOnDragEnd(result) {
     if (!result.destination) return;
@@ -33,9 +65,9 @@ function BlockCode(props) {
     setEditors(newEditors);
   };
 
-  const addExplain = () => {
-    console.log("add explain");
-    let newEditors = [...editors, { id: uuidv4(), type: "explain" }];
+  const addPredict = () => {
+    console.log("add predict");
+    let newEditors = [...editors, { id: uuidv4(), type: "predict" }];
     setEditors(newEditors);
   };
 
@@ -67,21 +99,17 @@ function BlockCode(props) {
   };
   return (
     <PerfectScrollbar>
-      <div id="iconPlus1Notebok" onClick={addEditor}>
-        <FontAwesomeIcon id="iconplus1" icon={faFont} />
-      </div>
 
-      <div id="iconPlus2Notebok">
-        <FontAwesomeIcon id="iconcode1" icon={faGlasses} onClick={addExplain} />
+      <div>
+        <OverlayTrigger
+          placement="right"
+          delay={{ show: 250, hide: 3000 }}
+          overlay={renderTooltip}
+        >
+          {/* <UilPlusCircle id="button-tooltip" type="button"></UilPlusCircle> */}
+          <Button variant="success" id="button-tooltip"  > <UilPlusCircle id="iconhoverlay" onMouseOver={changeWidth} /></Button>
+        </OverlayTrigger>
       </div>
-
-      <div id="iconPlus3Notebok">
-        <FontAwesomeIcon id="iconplus3" icon={faChartLine} />
-      </div>
-      {/* 
-<div id="conatinerbuttonSauvegarde">
-    <Button>Backup</Button>
-</div> */}
 
       <div id="divSetDisplaynone">
         <div id="editeur-de-code">

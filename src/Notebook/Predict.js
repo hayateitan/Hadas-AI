@@ -4,7 +4,7 @@ import { Form, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import CeluleFilter from './Celulefilter'
-import { v4 as uuidv4 } from 'uuid';
+import { UilTelegramAlt } from '@iconscout/react-unicons'
 
 
 const Predict = ({ id }) => {
@@ -45,7 +45,7 @@ const Predict = ({ id }) => {
 
 
 
-  
+
 
 
     // const [celule, setCelule] = useState([])
@@ -127,11 +127,12 @@ const Predict = ({ id }) => {
                     </div> */}
 
                     <div id="buttonmodalcelule">
-                        <CeluleFilter  />
+                        <CeluleFilter />
                     </div>
 
                     <div id="conatinerbuttonRun">
-                        <Button>Run!</Button>
+                        <UilTelegramAlt id="iconrun"></UilTelegramAlt>
+
                     </div>
 
                 </div>
