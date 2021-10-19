@@ -1,27 +1,34 @@
 import React from 'react'
-import { Button, Modal, Card, FormControl, Form } from 'react-bootstrap'
+import {  Card, FormControl } from 'react-bootstrap'
+
 const BlockFilter = ({ id }) => {
+
+
+
+
+
     return (
-        <div id={'blockfilter' + id}>
-            <Card style={{ width: '60rem' }} id="cardFilter">
-                <Card.Body>
-                    <FormControl
-                        aria-label="Default"
-                        aqria-describedby="inputGroup-sizing-default"
-                        placeholder="Block Name"
-                        id="nameOfblockPredictfilter"
-                    />
+
+                <div id={'blockfilter' + id}>
+                    <Card style={{ width: '60rem' }} id="cardFilter">
+                        <Card.Body>
+                            <FormControl
+                                aria-label="Default"
+                                aqria-describedby="inputGroup-sizing-default"
+                                placeholder="Block Name"
+                                id="nameOfblockPredictfilter"
+                            />
 
 
-                    {/* <Form.Select>
+                            {/* <Form.Select>
 
                         <option > </option>
 
                     </Form.Select> */}
-                </Card.Body>
-            </Card>
+                        </Card.Body>
+                    </Card>
 
-        </div>
+                </div>
 
 
 

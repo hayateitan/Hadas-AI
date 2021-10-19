@@ -1,21 +1,23 @@
-
-
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import './style.css'
 
-export default function Editeur({ id }) {
+export default function Editeur({ id }, { initialValue }) {
 
   const editorRef = useRef(null);
 
 
-
+  const [value, setValue] = useState(initialValue ?? '');
+  console.log(value)
   return (
 
     <div id={"mydiv_" + id} >
       <Editor
+        initialValue={initialValue}
+        value={value}
+        onEditorChange={(newValue) => setValue(newValue)}
         apiKey='9wnzsan1yrwcv5dpqtiwb1wz538yfoegkqhzpijcgqc2z9us' init={{ /* your other settings */ }}
-        onInit={(evt, editor) => editorRef.current = editor}
+        onInit={(editor) => editorRef.current = editor}
         init={{
           height: 250,
           menubar: false,
@@ -38,5 +40,4 @@ export default function Editeur({ id }) {
 
   );
 }
-
 

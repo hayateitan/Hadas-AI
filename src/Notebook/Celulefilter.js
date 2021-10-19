@@ -3,12 +3,22 @@ import { Button, Modal } from 'react-bootstrap'
 import { v4 as uuidv4 } from 'uuid';
 import BlockFilter from './BlockFilter'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 const Celulefilter = () => {
     const [xlgShow, setXlgShow] = useState(false);
 
-
     const [filter, setFilter] = useState([])
+
+
+    function handleOnDragEnd(result) {
+        if (!result.destination) return;
+        const items = Array.from(filter);
+        const [reorderedItem] = items.splice(result.source.index, 1);
+        items.splice(result.destination.index, 0, reorderedItem);
+
+        setFilter(items);
+    }
 
     const addFilter = () => {
         console.log("add")
@@ -16,13 +26,29 @@ const Celulefilter = () => {
         setFilter(newFilter)
     }
 
-    const createFilter = (e) => {
-        console.log(e)
-        if (e.type === "filter") {
-            return <BlockFilter id={e.id} key={e.id} />
-        }
 
-    }
+    const createFilter = (e, i) => {
+        console.log(e);
+
+        return (
+            <Draggable key={e.id} draggableId={e.id} index={i}>
+                {(provided) => (
+                    <div
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                    >
+                        {e.type === "filter" ? (
+                            <BlockFilter id={e.id} key={e.id} />
+                        ) : (
+                            <BlockFilter id={e.id} key={e.id} />
+                        )}
+                    </div>
+                )}
+            </Draggable>
+        );
+    };
+
 
     return (
 
@@ -35,7 +61,7 @@ const Celulefilter = () => {
                 show={xlgShow}
                 onHide={() => setXlgShow(false)}
                 aria-labelledby="example-modal-sizes-title-xlg"
-                scrollable={true}
+      
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="example-modal-sizes-title-xlg">
@@ -44,17 +70,25 @@ const Celulefilter = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <Button onClick={addFilter}>ss</Button>
-                  
 
-                        <div id="divSetDisplaynone" >
-                       
-                                {filter?.map(e => createFilter(e))}
+                    <div id="divSetDisplaynone" >
 
-                         
+                        <DragDropContext onDragEnd={handleOnDragEnd} >
+                            <Droppable droppableId="droppable">
+
+                                {(provided) => (
+                                    <div {...provided.droppableProps} ref={provided.innerRef}>
+                                        {filter?.map((e, i) => createFilter(e, i))}
+                                        {provided.placeholder}
+                                    </div>
+                                )}
 
 
-                        </div>
-                 
+                            </Droppable>
+                        </DragDropContext>
+
+                    </div>
+
 
                     <Button id="ButtonSaveFilter">Save</Button>
                 </Modal.Body>

@@ -7,12 +7,25 @@ import { faGlasses } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Editeur from "./Editeur.js";
 import Explain from "./Predict.js";
-
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { v4 as uuidv4 } from "uuid";
 
 function BlockCode(props) {
+
+
   const [editors, setEditors] = useState([]);
+
+
+
+
+  function handleOnDragEnd(result) {
+    if (!result.destination) return;
+    const items = Array.from(editors);
+    const [reorderedItem] = items.splice(result.source.index, 1);
+    items.splice(result.destination.index, 0, reorderedItem);
+
+    setEditors(items);
+  }
 
   const addEditor = () => {
     console.log("add");
@@ -72,11 +85,12 @@ function BlockCode(props) {
 
       <div id="divSetDisplaynone">
         <div id="editeur-de-code">
-          <DragDropContext>
+          <DragDropContext onDragEnd={handleOnDragEnd} >
             <Droppable droppableId="droppable">
-              {(provided, snapshot) => (
+              {(provided) => (
                 <div {...provided.droppableProps} ref={provided.innerRef}>
                   {editors?.map((e, i) => createEditor(e, i))}
+                  {provided.placeholder}
                 </div>
               )}
             </Droppable>
