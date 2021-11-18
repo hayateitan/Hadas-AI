@@ -1,0 +1,19 @@
+input#datestart,
+input#dateend {
+	width: 90px;
+	height: 0px;
+}
+
+div#filterdateblock {
+	position: relative;
+	top: -34px;
+	left: 136px;
+}
+
+label#datestart-label {
+	top: -13px;
+}
+
+label#dateend-label {
+	top: -12px;
+}

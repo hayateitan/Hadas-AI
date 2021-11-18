@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 import BlockFilter from './BlockFilter'
 import { UilFocusAdd } from '@iconscout/react-unicons'
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-
-const Celulefilter = () => {
+import './celulfilter.css'
+const Celulefilter = ({tab}) => {
     const [xlgShow, setXlgShow] = useState(false);
 
     const [filter, setFilter] = useState([])
@@ -31,21 +31,10 @@ const Celulefilter = () => {
         console.log(e);
 
         return (
-            <Draggable key={e.id} draggableId={e.id} index={i}>
-                {(provided) => (
-                    <div
-                        ref={provided.innerRef}
-                        {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                    >
-                        {e.type === "filter" ? (
-                            <BlockFilter id={e.id} key={e.id} />
-                        ) : (
-                            <BlockFilter id={e.id} key={e.id} />
-                        )}
-                    </div>
-                )}
-            </Draggable>
+
+            <BlockFilter tab={tab} id={e.id} key={e.id} />
+
+
         );
     };
 
@@ -62,6 +51,7 @@ const Celulefilter = () => {
                 onHide={() => setXlgShow(false)}
                 aria-labelledby="example-modal-sizes-title-xlg"
                 scrollable={true}
+                id="heightChange"
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="example-modal-sizes-title-xlg">
@@ -74,19 +64,7 @@ const Celulefilter = () => {
 
                     <div id="divSetDisplaynone" >
 
-                        <DragDropContext onDragEnd={handleOnDragEnd} >
-                            <Droppable droppableId="droppable">
-
-                                {(provided) => (
-                                    <div {...provided.droppableProps} ref={provided.innerRef}>
-                                        {filter?.map((e, i) => createFilter(e, i))}
-                                        {provided.placeholder}
-                                    </div>
-                                )}
-
-
-                            </Droppable>
-                        </DragDropContext>
+                        {filter?.map((e, i) => createFilter(e, i))}
 
                     </div>
 

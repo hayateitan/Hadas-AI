@@ -1,0 +1,34 @@
+div#containerAdvancedMode{
+    width: 296px;
+    height: 122px;
+    position: relative;
+    /* margin: auto; */
+    left: 20px;
+    top: 28px;
+    border-radius: 0.3rem;
+}
+
+p#AdvancedModetitrePrincipal {
+    font-size: 22px;
+    color: #082e40;
+    left: 16px;
+    top: 3px;
+    position: relative;
+}
+
+button#ButonnYes {
+    background: #ffffff;
+    border-color: #ffffff;
+    width: 75px;
+    height: 40px;
+    color: #082e40;
+    margin: 11px;
+}
+
+button#ButonnNo{
+    background: #ffffff;
+    border-color: #ffffff;
+    width: 75px;
+    height: 40px;
+    color: #082e40;
+}

@@ -1,0 +1,85 @@
+div#containerTeamsharing {
+	width: 1140px;
+	height: 400px;
+	background: #f1f3f2;
+	position: relative;
+	top: 207px;
+	margin: auto;
+	border-radius: 0.3rem;
+}
+
+h1#titlePrincipal {
+	font-size: 26px;
+	position: absolute;
+	left: 20px;
+	top: 11px;
+	color: #082e40;
+}
+
+h1#titlePrincipal2 {
+	font-size: 26px;
+	position: absolute;
+	left: 491px;
+	top: 11px;
+	color: #082e40;
+}
+
+div#AvatarL {
+	position: absolute;
+	top: 67px;
+	left: 22px;
+}
+div#AvatarG {
+	position: relative;
+	top: 65px;
+	right: 572px;
+}
+div#AvatarG2 {
+	position: relative;
+	top: -3px;
+	right: 4px;
+}
+div#AvatarG3 {
+	top: -7px;
+	position: relative;
+	right: 3px;
+}
+div#AvatarG4 {
+	position: relative;
+	top: -11px;
+	right: 3px;
+}
+div#AvatarG5 {
+	position: relative;
+	top: -15px;
+	right: 3px;
+}
+div#avatargroup1 {
+	position: relative;
+	left: 69px;
+}
+
+div#Pavatar {
+	position: absolute;
+	left: 77px;
+	top: 73px;
+}
+
+p#TeamP {
+	margin-bottom: 32px;
+	font-size: 17px;
+	color: #082e40;
+}
+
+h1#titlePrincipal3 {
+	font-size: 26px;
+	position: absolute;
+	left: 865px;
+	top: 11px;
+	color: #082e40;
+}
+div#Button {
+	top: 72px;
+    position: absolute;
+    left: 864px;
+}

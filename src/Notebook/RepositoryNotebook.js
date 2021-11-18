@@ -11,7 +11,7 @@ const RepositoryNotebook = () => {
                     <div>
                         <UilPen id="iconCreateNoteBook" />
                         <p id="PcreateNotebook">
-                            Create a New NoteBook
+                            Create a notebook
                         </p>
                     </div>
                 </button>

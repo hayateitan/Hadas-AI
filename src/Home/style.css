@@ -1,13 +1,12 @@
 div#principalContainerHome {
     width: 1359px;
     display: flex;
-    margin: 77px;
-    top: 75px;
+    top: 114px;
+    left: 82px;
     position: relative;
     flex-wrap: wrap;
     flex: -15 -19 195px;
 }
-
 
 div#homeimg1 {
     top: 81px;

@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import reducer from "./reducers/mainreducer";
 import thunk from "redux-thunk";
 
-const initialState = { notebooks:[], test:"" };
+const initialState = { notebooks:[], tables:[], columns: [], filters:{}};
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk));
 
