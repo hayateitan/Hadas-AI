@@ -1,19 +1,28 @@
 input#datestart,
 input#dateend {
-	width: 90px;
 	height: 0px;
+	background: #f1f3f2;
 }
 
 div#filterdateblock {
-	position: relative;
-	top: -34px;
-	left: 136px;
+    width: 223px;
+
 }
 
 label#datestart-label {
 	top: -13px;
+	color: #082e40;
 }
 
 label#dateend-label {
 	top: -12px;
+	color: #082e40;
+}
+/* fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    background: #f1f3f2;
+} */
+
+.css-1lwbda4-MuiStack-root {
+    position: relative;
+    top: 6px;
 }

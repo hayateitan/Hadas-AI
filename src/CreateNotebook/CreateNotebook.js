@@ -17,14 +17,14 @@ const CreateNotebook = () => {
         <div >
             <PerfectScrollbar>
 
-                <ChoiceBuisnessDomain />
+                {/* <ChoiceBuisnessDomain /> */}
                 <ChoiceLibrary />
                 <TagsBar selectedTags={selectedTags} tags={[]} />
-                <TeamSharing />
-                <div id="ContainerAA">
+                {/* <TeamSharing /> */}
+                {/* <div id="ContainerAA">
                     <AdvancedMode />
                     <AlgoOption />
-                </div>
+                </div> */}
                 <Link to="/Predict"  >
                     <Button id="ButonnNext" >Next</Button>
                 </Link>

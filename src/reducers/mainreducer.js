@@ -18,19 +18,19 @@ const reducer = produce((draft, action) => {
     case "COLUMN_SELECTED":
       draft.selectedColumn = payload
       break;
-      case "COLUMN_SELECTEDF":
-        draft.selectedColumnf = payload
-        break;
-      case "ADD_FILTER":
-        if (draft.filters[payload.table] === undefined) {
-          console.log("init for table " + payload.table)
-          draft.filters[payload.table] = []
-        }
-        draft.filters[payload.table].push(payload.filter)
-        break;
-      case "REMOVE_FILTER":
-        
-        break;
+    case "COLUMN_SELECTEDF":
+      draft.selectedColumnf = payload
+      break;
+    case "ADD_FILTER":
+      if (draft.filters[payload.table] === undefined) {
+        console.log("init for table " + payload.table)
+        draft.filters[payload.table] = []
+      }
+      draft.filters[payload.table].push(payload.filter)
+      break;
+    case "REMOVE_FILTER":
+
+      break;
     default:
       break;
   }

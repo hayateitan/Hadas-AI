@@ -1,0 +1,27 @@
+p#PWIP {
+	position: absolute;
+	top: 273px;
+	color: #082e40;
+	left: 483px;
+	font-size: x-large;
+}
+
+.dytgQ {
+
+	border-radius: 100%;
+	position: relative;
+	z-index: 1;
+	background-color: #038fdd;
+}
+
+.btTGfy {
+
+	border-radius: 100%;
+	position: relative;
+	background-color: #b02efe;
+}
+div#containeranimation {
+	position: fixed;
+	top: 288px;
+	left: 447px;
+}

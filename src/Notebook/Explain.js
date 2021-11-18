@@ -37,7 +37,7 @@ const Explain = () => {
     return (
         <div>
 
-            {/* <div id="containerPrincipalMessagesNotebook1">
+            <div id="containerPrincipalMessagesNotebook1">
                 <div id="containerPrincipalMessagesNotebook2">
 
                     <div id="Messages1">
@@ -112,7 +112,7 @@ const Explain = () => {
                     </div>
 
                 </div>
-            </div> */}
+            </div>
 
             <div id="iconPlus2Notebok" >
                 <Link to="/Explain"  >

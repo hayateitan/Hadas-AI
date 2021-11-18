@@ -15,8 +15,6 @@ div#containericon {
 	position: fixed;
 }
 
-
-
 div#navbarScroll {
 	flex-grow: 1;
 	align-items: center;
@@ -43,11 +41,11 @@ img#imgNavbar {
 	position: relative;
 }
 input#searchnavbar {
-    width: 480px;
-    height: 45px;
-    color: rgb(198, 198, 198);
-    background: #082e40;
-    border: #082e40;
+	width: 480px;
+	height: 45px;
+	color: rgb(198, 198, 198);
+	background: #082e40;
+	border: #082e40;
 }
 svg#iconnavbar {
 	display: block;
@@ -66,8 +64,6 @@ button.btn.btn-outline-success {
 	border: #f0f8ff00;
 }
 
-
-
 form.d-flex {
 	position: relative;
 	top: 3px;
@@ -75,14 +71,14 @@ form.d-flex {
 }
 svg#icon {
 	width: 30px;
-    height: 33px;
-    text-decoration: none;
-    color: #263f56;
+	height: 33px;
+	text-decoration: none;
+	color: #263f56;
 }
 
 svg#iconSlack {
-    width: 30px;
-    height: 33px;
+	width: 30px;
+	height: 33px;
 }
 
 nav#main-nav {
@@ -100,7 +96,32 @@ svg.svg-inline--fa.fa-user.fa-w-14.fa-lg {
 	color: #23425e;
 }
 a.navbar-brand {
-    position: absolute;
-    left: 17px;
-    /* right: -8px; */
+	position: absolute;
+	left: 17px;
+	/* right: -8px; */
+}
+
+div#popover-contained {
+	width: 168px;
+	height: 151px;
+}
+p#PWIPPH {
+	position: absolute;
+	color: #082e40;
+	left: 11px;
+	font-size: 20px;
+}
+div#NIA {
+	right: 32px;
+	position: relative;
+}
+div#NIN {
+	position: relative;
+	right: 52px;
+	top: 0px;
+}
+
+div#NIF {
+	position: relative;
+	right: 72px;
 }

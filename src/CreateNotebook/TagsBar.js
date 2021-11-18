@@ -11,7 +11,7 @@ const TagsBar = (props) => {
     };
 
     const addTags = event => {
-        if (event.target.value === "") {
+        if (event.target.value.length > 1) {
             setTags([...tags, event.target.value]);
             props.selectedTags([...tags, event.target.value]);
             event.target.value = "";

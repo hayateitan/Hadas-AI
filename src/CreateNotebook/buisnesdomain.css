@@ -7,7 +7,7 @@
 div#changeHeightBuisnessdomain {
     height: 403px;
 }
-.modal-body {
+/* .modal-body {
 	display: grid;
 	width: 967px;
 	grid-template-columns: 7px 7px 7px 7px 7px 7px 7px 7px;
@@ -17,7 +17,7 @@ div#changeHeightBuisnessdomain {
 	top: 3px;
 	left: 73px;
 	height: 98px;
-}
+} */
 div#container {
 	width: 1141px;
 	position: relative;

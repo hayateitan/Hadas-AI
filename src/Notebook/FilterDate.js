@@ -17,7 +17,7 @@ const FilterDate = () => {
                 <Stack spacing={3}>
 
                     <DesktopDateRangePicker
-                        startText="Desktop start"
+                        startText=" start"
                         value={value}
                         onChange={(newValue) => {
                             setValue(newValue);

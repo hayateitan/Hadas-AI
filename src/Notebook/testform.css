@@ -1,0 +1,39 @@
+form#Formtest {
+    position: relative;
+    top: 122px;
+    left: 0px;
+    margin-left: 114px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+}
+
+select#sel1,
+select#selt,
+select#selc {
+    width: 149px;
+    height: 40px;
+    color: #082e40;
+    /* background: #f1f3f2; */
+}
+
+.MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 34px;
+    width: 224px;
+    top: 5px;
+    color: #082e40;
+}
+
+.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.css-1kpdewa-MuiAutocomplete-root {
+    /* color: #082e40; */
+    /* background: #f1f3f2; */
+    /* height: 34px; */
+    width: 224px;
+    /* top: 5px; */
+    /* color: #082e40; */
+    background: #f1f3f2;
+}
+
+label.form-label {
+    color: #082e40;
+}

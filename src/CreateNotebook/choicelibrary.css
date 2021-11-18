@@ -1,0 +1,82 @@
+div#containerlibrary {
+	height: 162px;
+	position: initial;
+	width: auto;
+	background: #f1f3f2;
+}
+.modal-content {
+	height: auto;
+}
+div#FolderL1 {
+	position: relative;
+	left: 6px;
+}
+
+svg {
+	color: #082e40;
+	/* font-size: 47px; */
+	width: 40px;
+	height: 40px;
+}
+div#PavatarL {
+	width: max-content;
+	position: relative;
+	right: 85px;
+	top: 4px;
+}
+
+div#PavatarL2 {
+	width: max-content;
+	position: relative;
+	right: 90px;
+	top: 5px;
+}
+
+div#PavatarL3 {
+	position: relative;
+	width: max-content;
+	right: 88px;
+	top: 5px;
+}
+
+div#PavatarL4 {
+	position: relative;
+	right: 88px;
+	width: max-content;
+	top: 5px;
+}
+button#buttonLibraryText {
+	position: relative;
+	top: 89px;
+	left: right;
+	background: #7fffd400;
+	left: 137px;
+	border: aliceblue;
+	font-size: larger;
+}
+div#modallibrary {
+	width: 297px;
+}
+.accordion-item {
+	width: 295px;
+	top: 16px;
+	left: -16px;
+	position: relative;
+}
+div#titleCreateNotebook {
+	top: 95px;
+	width: 1140px;
+	left: 137px;
+}
+div#descriptionCreateNoteBook {
+	top: 86px;
+	width: 1140px;
+	left: 137px;
+}
+input#floatingInputCustom {
+	background: #ffffff00;
+	border: aliceblue;
+	outline: none !important;
+	box-shadow: none;
+    text-align: start;
+}
