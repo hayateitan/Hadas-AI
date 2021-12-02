@@ -225,9 +225,9 @@ const Predict = ({ id }) => {
           <div id="buttonchainenumero4">
             <Form.Select id="selt">
               <option> Budget </option>
-              <option> low </option>
-              <option> standart </option>
-              <option> high </option>
+              <option> Low </option>
+              <option> Standard </option>
+              <option> High </option>
             </Form.Select>
           </div>
           <div id="buttonChaineNumero1">
