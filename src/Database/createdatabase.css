@@ -1,0 +1,345 @@
+h1#principaltitlecreatedatabse {
+  position: absolute;
+  top: 89px;
+  left: 116px;
+  font-size: 25px;
+  color: #082e40;
+}
+div#cardstyle {
+  width: 191px;
+  left: 117px;
+  top: 132px;
+  height: 206px;
+  margin-bottom: 21px;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  border: none;
+}
+p.card-text {
+  top: 25px;
+  position: relative;
+  text-align: center;
+  font-size: 19px;
+  color: #082e40;
+}
+div#containergridselecttypedatabse {
+  display: grid;
+  grid-template-columns: 216px 216px 216px 216px 216px;
+}
+.list-group-item {
+  background: #f1f3f294;
+  text-align: center;
+}
+.card-title.h5 {
+  position: relative;
+  top: 34px;
+  text-align: center;
+}
+div#bgtitleicon {
+  background: #58b680db;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#csvsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #ade6c3;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+
+div#bgodbgtitleicon2 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #9dbefd;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon2 {
+  background: #1e68f9;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+
+svg#dropboxsvg {
+  /* color: white; */
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+
+div#bgodbgtitleicon3 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #f8c4af;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon3 {
+  background: #ee7f5d;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+
+svg#airtablesvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+
+div#bgodbgtitleicon4 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #b5caf9;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon4 {
+  background: #598de9;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#googledrivesvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon6 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #f0d7ab;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon6 {
+  background: #e69b4b;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#postgressqlsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon5 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #a3c4d4;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon5 {
+  background: #38758d;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#mysqlsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon7 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #c1c2c2;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon7 {
+  background: #7d7e7e;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#serversqlsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon8 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #f8dfaf;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon8 {
+  background: #ffb348;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#redshiftsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon9 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #b0cafb;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon9 {
+  background: #4f8cf3;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+
+svg#bigquerysvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+
+div#bgodbgtitleicon10 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #b9d3b1;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon10 {
+  background: #5d9c50;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#mongodbsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+div#bgodbgtitleicon11 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #c4d4d7;
+  position: relative;
+  margin: auto;
+  top: -12px;
+}
+div#bgtitleicon11 {
+  background: #7e9b9b;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#snowflakesvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}
+
+div#bgodbgtitleicon12 {
+  width: 75px;
+  border-radius: 63px;
+  height: 73px;
+  background: #ffccb9;
+  position: relative;
+  margin: auto;
+  top: -12 px;
+}
+div#bgtitleicon12 {
+  background: #f99269;
+  width: 63px;
+  border-radius: 63px;
+  height: 59px;
+  position: relative;
+  margin: auto;
+  top: 7px;
+}
+svg#hubspotsvg {
+  width: 32px;
+  height: auto;
+  color: white;
+  top: 12px;
+  position: relative;
+}

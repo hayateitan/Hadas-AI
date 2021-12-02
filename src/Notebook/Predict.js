@@ -10,6 +10,11 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Date from "./FilterDate";
 import InputNumber from "./InputNumber";
 import InputText from "./InputText";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import { v4 as uuidv4 } from "uuid";
+import MultipleSelect from "./SelectMultiple";
+import { GoSettings } from "react-icons/go";
+import MultipleSelect2 from "./SelectMultiple2";
 const Predict = ({ id }) => {
   const dispatch = useDispatch();
 
@@ -66,7 +71,58 @@ const Predict = ({ id }) => {
   const [selectedCol, setSelectedCol] = useState();
   const [lgShow, setLgShow] = useState(false);
   const [value, setValue] = useState();
-  console.log(value);
+  const [line, setLine] = useState();
+
+  const addline = () => {
+    let tab = [];
+    let newObj = {};
+    for (let col of value) {
+      console.log(col);
+      newObj[col] = null;
+    }
+    newObj.id = uuidv4();
+    console.log(newObj.id + "voila c ca lid ");
+    tab.push(newObj);
+
+    setLine(tab);
+  };
+  const createLine = (e,i) => {
+    return (
+      <>
+        <tr>
+          {value !== undefined
+            ? columns?.map((c, i) => {
+                console.log("ligne cree  = " + value);
+                console.log(c);
+                if (value.includes(c.columnName)) {
+                  switch (c.columnType) {
+                    case "varchar":
+                      return (
+                        <td>
+                          <InputText key={i} />
+                        </td>
+                      );
+                    case "datetime":
+                      return (
+                        <td>
+                          <Date key={i} />
+                        </td>
+                      );
+                    case "smallint":
+                      return (
+                        <td>
+                          <InputNumber key={i} />
+                        </td>
+                      );
+                  }
+                }
+              })
+            : ""}
+        </tr>
+      </>
+    );
+  };
+
   return (
     <div id={"blockNotebook_" + id}>
       {" "}
@@ -157,6 +213,23 @@ const Predict = ({ id }) => {
         </div>
 
         <div id="Buttonchainecontainer">
+          <Form.Select id="selt">
+            <option> Task </option>
+            <option> Predict </option>
+            <option> Explain </option>
+            <option> Select </option>
+          </Form.Select>
+          <div id="iconsetting">
+            <GoSettings id="svgsetting" />
+          </div>
+          <div id="buttonchainenumero4">
+            <Form.Select id="selt">
+              <option> Budget </option>
+              <option> low </option>
+              <option> standart </option>
+              <option> high </option>
+            </Form.Select>
+          </div>
           <div id="buttonChaineNumero1">
             <Form.Select onChange={(e) => onTableauSelected(e.target.value)}>
               <option> Table </option>{" "}
@@ -165,19 +238,19 @@ const Predict = ({ id }) => {
               ))}
             </Form.Select>
           </div>
-          <Form.Select id="selt">
-            <option> Task </option>
-            <option> Predict </option>
-            <option> Explain </option>
-            <option> Select </option>
-          </Form.Select>
           <div id="buttonChaineNumero2">
             <Form.Select onChange={(e) => onColumnSelected(e.target.value)}>
-              <option> Column </option>{" "}
+              <option> Target </option>{" "}
               {columns?.map((t) => (
                 <option key={t.columnName}> {t.columnName} </option>
               ))}
             </Form.Select>
+          </div>
+          <div>
+            <MultipleSelect />
+          </div>
+          <div>
+            <MultipleSelect2 />
           </div>
           <div id="buttonChaineNumero3">
             <Button
@@ -189,7 +262,7 @@ const Predict = ({ id }) => {
             </Button>
 
             <Modal
-              size="lg"
+              size="xl"
               show={lgShow}
               onHide={() => setLgShow(false)}
               aria-labelledby="example-modal-sizes-title-lg"
@@ -210,15 +283,15 @@ const Predict = ({ id }) => {
                         //   onChange={(e) => console.log(e.target.value+'c ca ')}
                         {...params}
                         variant="filled"
-                        label="add column"
-                        placeholder="column"
+                        label="Columns to display"
+                        placeholder="Columns to display"
                       />
                     )}
                   />
                 </Modal.Title>{" "}
               </Modal.Header>{" "}
               <Modal.Body>
-                <Table striped bordered hover size="lg">
+                <Table striped bordered hover>
                   <thead>
                     <tr>
                       {value?.map((t) => (
@@ -227,52 +300,48 @@ const Predict = ({ id }) => {
                     </tr>
                   </thead>
                   <tbody>
-                    {value !== undefined
-                      ? columns?.map((c, i) => {
-                          console.log("id = " + i);
-                          console.log("selected = " + value);
-                          if (i != value) {
+                    <tr>
+                      {value !== undefined
+                        ? columns?.map((c, i) => {
+                            console.log("id = " + i);
+                            console.log("selected = " + value);
                             console.log(c);
-                            switch (c.columnType) {
-                              case "varchar":
-                                return (
-                                  <tr>
-                                    <td>
+                            if (value.includes(c.columnName)) {
+                              switch (c.columnType) {
+                                case "varchar":
+                                  return (
+                                    <td id={"inputext_" + id}>
                                       <InputText />
                                     </td>
-                                  </tr>
-                                );
-                              case "datetime":
-                                return (
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <Date key={i} />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                );
-                              case "smallint":
-                                return (
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <InputNumber key={i} />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                );
+                                  );
+                                case "datetime":
+                                  return (
+                                    <td>
+                                      <Date key={i} />
+                                    </td>
+                                  );
+                                case "smallint":
+                                  return (
+                                    <td>
+                                      <InputNumber key={i} />
+                                    </td>
+                                  );
+                              }
                             }
-                          }
-                        })
-                      : ""}
+                          })
+                        : ""}
+                    </tr>
+
+                    {line?.map((e, i) => createLine(e, i))}
+
+                    <AddCircleIcon id="iconhoverlaymodal" onClick={addline} />
                   </tbody>
                 </Table>
               </Modal.Body>
             </Modal>
           </div>
           <div id="conatinerbuttonRun">
-            <DoubleArrowIcon id="iconrun"> </DoubleArrowIcon>
+            <DoubleArrowIcon id="iconrun" />
           </div>{" "}
           <div id="helpblock">
             <HelpOutlineIcon />

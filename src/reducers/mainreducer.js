@@ -31,6 +31,10 @@ const reducer = produce((draft, action) => {
     case "REMOVE_FILTER":
 
       break;
+    case "CREATE_LIBRARY":
+      console.log(payload)
+      draft.librairies.push(payload.name)
+      break;
     default:
       break;
   }

@@ -39,6 +39,7 @@
     "react-beautiful-dnd": "^13.1.0",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-jupyter-notebook": "^0.3.2",
     "react-loadingg": "^1.7.2",
     "react-perfect-scrollbar": "^1.5.8",

@@ -1,28 +1,31 @@
 input#datestart,
 input#dateend {
-	height: 0px;
-	background: #f1f3f2;
+  height: 0px;
+  background: #f1f3f2;
 }
 
 div#filterdateblock {
-    width: 223px;
-
+  width: 223px;
 }
 
 label#datestart-label {
-	top: -13px;
-	color: #082e40;
+  top: -5px;
+  color: #082e40;
 }
 
 label#dateend-label {
-	top: -12px;
-	color: #082e40;
+  top: -5px;
+  color: #082e40;
 }
 /* fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     background: #f1f3f2;
 } */
 
 .css-1lwbda4-MuiStack-root {
-    position: relative;
-    top: 6px;
+  position: relative;
+  top: 6px;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.css-1smlk3z-MuiPaper-root {
+  position: relative;
+  left: 135px;
 }

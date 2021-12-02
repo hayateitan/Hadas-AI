@@ -5,7 +5,6 @@ import Editeur from "./Editeur.js";
 import Explain from "./Predict.js";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { Button, Tooltip, Overlay, Badge } from 'react-bootstrap'
-import { UilPlusCircle } from '@iconscout/react-unicons'
 import SubjectIcon from '@mui/icons-material/Subject';
 import CodeIcon from '@mui/icons-material/Code';
 import { v4 as uuidv4 } from "uuid";

@@ -1,27 +1,41 @@
-p#PWIP {
-	position: absolute;
-	top: 273px;
-	color: #082e40;
-	left: 483px;
-	font-size: x-large;
+div#containerPreviewDtabase {
+  position: relative;
+  top: 119px;
+  left: 93px;
+  width: 203px;
+  height: 203px;
+  border-radius: 7px;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  /* box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px; */
 }
-
-.dytgQ {
-
-	border-radius: 100%;
-	position: relative;
-	z-index: 1;
-	background-color: #038fdd;
+div#containertextandiconpreviewblock {
+  position: relative;
+  top: 58px;
+  text-align: center;
 }
-
-.btTGfy {
-
-	border-radius: 100%;
-	position: relative;
-	background-color: #b02efe;
+a {
+  text-decoration: auto;
 }
-div#containeranimation {
-	position: fixed;
-	top: 288px;
-	left: 447px;
+p#Pcreatedatabase {
+  font-size: 18px;
+  font-family: inherit;
+  color: #718096;
+}
+div#containerbuttoncreatedatabase {
+  top: 67px;
+  position: relative;
+  text-align: center;
+}
+button#buttoncreatelibrarydatabase {
+  width: 190px;
+  background: #092e3f;
+  color: white;
+}
+svg#svgbuttoncreatedatabase {
+  position: relative;
+  top: -2px;
+  color: white;
+  right: 7px;
+  width: 17px;
+  height: auto;
 }

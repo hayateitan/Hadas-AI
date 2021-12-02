@@ -322,7 +322,7 @@ select.form-select {
 div#Buttonchainecontainer {
   display: grid;
   width: 269px;
-  grid-template-columns: 147px 159px 148px 0px;
+  grid-template-columns: 190px 190px 190px 190px;
   align-items: start;
   justify-content: space-between;
   position: relative;
@@ -332,9 +332,7 @@ div#Buttonchainecontainer {
 
 div#conatinerbuttonRun {
   position: relative;
-  right: 0px;
-  left: 618px;
-  top: -39px;
+  left: 18px;
 }
 
 button.btn.btn-primary {
@@ -411,8 +409,9 @@ svg#iconrun {
   position: relative;
   width: 29px;
   height: 40px;
-  left: 4px;
   color: #082e40;
+  left: 722px;
+  top: -27px;
 }
 
 svg#addfilter {
@@ -438,13 +437,14 @@ svg#iconhoverlay {
 
 button#CreateNoteNook {
   position: relative;
-  top: 123px;
-  left: 140px;
-  width: 330px;
-  height: 368px;
+  top: 119px;
+  left: 93px;
+  width: 203px;
+  height: 276px;
   border-radius: 22px;
   background: white;
-  border: 1px solid #d4d4d4;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  border: none;
 }
 
 p#PcreateNotebook {
@@ -505,6 +505,8 @@ button#buttonprofileofprediction {
   width: 138.5px;
   font-family: poppins;
   border: none;
+  top: 12px;
+  position: relative;
 }
 
 svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
@@ -514,16 +516,74 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
 
 div#helpblock {
   position: relative;
-  left: 769px;
-  top: 66px;
+  left: 729px;
+  top: 25px;
 }
 
 .MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-1w8yruj-MuiInputBase-root-MuiFilledInput-root {
-  width: 652px;
+  width: 1096px;
 }
 .MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedStart.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-187ruhz-MuiInputBase-root-MuiFilledInput-root {
-  width: 652px;
+  width: 1096px;
 }
 .MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root.css-wb57ya-MuiFormControl-root-MuiTextField-root {
   background: white;
+}
+input#inputT {
+  width: auto;
+}
+
+button.btn-close {
+  top: 153px;
+  position: fixed;
+  left: 1255px;
+}
+
+fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+svg#svgsetting {
+  width: 33px;
+}
+
+div#containerbuttonunitindex {
+  height: 40px;
+}
+.MuiFormControl-root.css-oibiuj-MuiFormControl-root {
+  height: 40px;
+  top: 5px;
+}
+.MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiSelect-root.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 40px;
+  color: #092e3f;
+  background: #f0f3f2;
+}
+
+input.MuiSelect-nativeInput.css-yf8vq0-MuiSelect-nativeInput {
+  height: 40px;
+}
+fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  height: 40px;
+  top: 4px;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  color: white;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  color: #ffffff00;
+}
+div#iconsetting {
+  text-align: center;
+}
+div#buttonChaineNumero2 {
+  position: relative;
+  top: 11px;
+}
+label#demo-multiple-name-label {
+  top: -8px;
+  color: #092e3f;
+}
+tr {
+  text-align: center;
 }

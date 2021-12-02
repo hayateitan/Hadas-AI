@@ -13,6 +13,8 @@ import Account from "./account/Account";
 import Database from "./Database/Database";
 import NbIp from "./NoteBookInProgress/NbIp";
 import Slack from "./Slack/Slack";
+import CreateDtabase from "./Database/CreateDtabase"
+
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,7 @@ function App() {
           <Route exact path="/DataBase" component={() => <Container><Database /></Container>} />
           <Route exact path="/NbIp" component={() => <Container><NbIp /></Container>} />
           <Route exact path="/Slack" component={() => <Container><Slack /></Container>} />
+          <Route exact path="/createdtabase" component={() => <Container><CreateDtabase /></Container>} />
    
         </Switch>
       </Router>
