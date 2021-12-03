@@ -71,10 +71,10 @@ const Predict = ({ id }) => {
   const [selectedCol, setSelectedCol] = useState();
   const [lgShow, setLgShow] = useState(false);
   const [value, setValue] = useState();
-  const [line, setLine] = useState();
+  const [line, setLine] = useState([]);
 
   const addline = () => {
-    let tab = [];
+    let tab = [...line];
     let newObj = {};
     for (let col of value) {
       console.log(col);
@@ -86,7 +86,7 @@ const Predict = ({ id }) => {
 
     setLine(tab);
   };
-  const createLine = (e,i) => {
+  const createLine = (e, i) => {
     return (
       <>
         <tr>
