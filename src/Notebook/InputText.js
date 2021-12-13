@@ -1,18 +1,24 @@
-import React, { useEffect, useState, useHistory } from "react";
+import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-const InputText = () => {
+
+function InputText({ OnTextChanged }) {
   const [inputext, setInputext] = useState();
-  console.log(inputext);
+
+  const onValueChanged = (e) => {
+    setInputext(e.target.value);
+    OnTextChanged(e.target.value);
+  };
+
   return (
     <div>
       <Form.Control
         id="inputT"
         type="text"
         placeholder="Type here"
-        onChange={(e) => setInputext(e.target.value)}
+        onChange={onValueChanged}
       />
     </div>
   );
-};
+}
 
 export default InputText;

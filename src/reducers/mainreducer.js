@@ -33,7 +33,7 @@ const reducer = produce((draft, action) => {
       break;
     case "CREATE_LIBRARY":
       console.log(payload)
-      draft.librairies.push(payload.name)
+      draft.librairies.push(payload)
       break;
     default:
       break;

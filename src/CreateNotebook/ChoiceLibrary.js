@@ -3,10 +3,10 @@ import { Modal, Button, Form, Accordion } from "react-bootstrap";
 import "./choicelibrary.css";
 import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
 import FolderIcon from "@mui/icons-material/Folder";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
+
 import { useDispatch, useSelector } from "react-redux";
-const ChoiceLibrary = () => {
+import { v4 as uuidv4 } from "uuid";
+const ChoiceLibrary = ({id}) => {
   const dispatch = useDispatch();
 
   const [show, setShow] = useState(false);
@@ -16,7 +16,7 @@ const ChoiceLibrary = () => {
   const [descriptionscl, setDescriptionscl] = useState();
 
   const createLibray = () => {
-    const content = { name: name };
+    const content = { name: name , id: uuidv4()};
     dispatch({ type: "CREATE_LIBRARY", payload: content });
   };
 
@@ -58,10 +58,10 @@ const ChoiceLibrary = () => {
         </Modal.Header>
         <Modal.Body>
           {namelibrary?.map((t) => (
-            <div key={t} id="comntainer">
+            <div key={t.id} id={t.id}>
               {/* <FormControlLabel key={t.name} control={<Checkbox />} label={t.name} /> */}
-              <Form.Group key={t.name} className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check key={t.name} type="checkbox" label={t} />
+              <Form.Group key={t.id} className="mb-3" controlId={t.id}>
+                <Form.Check key={t.id} type="checkbox" label={t.name} />
               </Form.Group>
               <FolderIcon id="iconaddtolibrary" />
             </div>

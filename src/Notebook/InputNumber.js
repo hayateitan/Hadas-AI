@@ -1,12 +1,25 @@
-import React from 'react'
-import './inputnumber.css'
-import { Form, FormControl } from 'react-bootstrap';
-const InputNumber = () => {
-    return (
-        <div>
-            <Form.Control id="inputN" type="number" placeholder="Type a number" />
-        </div>
-    )
-}
+import React, { useState } from "react";
+import "./inputnumber.css";
+import { Form } from "react-bootstrap";
 
-export default InputNumber
+const InputNumber = ({ OnNumberChanged }) => {
+  const [inputnumber, setInputnumber] = useState();
+
+  const onValueChanged = (e) => {
+    setInputnumber(e.target.value);
+    OnNumberChanged(e.target.value);
+  };
+
+  return (
+    <div>
+      <Form.Control
+        id="inputN"
+        type="number"
+        placeholder="Type a number"
+        onChange={onValueChanged}
+      />
+    </div>
+  );
+};
+
+export default InputNumber;
