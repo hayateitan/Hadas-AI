@@ -34,7 +34,7 @@ const Login = (props) => {
 
           <Form id="formlogin" onSubmit={doSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Email </Form.Label>
+              <Form.Label id="labellogin">Email </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter email"
@@ -43,7 +43,7 @@ const Login = (props) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              <Form.Label id="labellogin">Password</Form.Label>
               <FormControl
                 aria-label="Default"
                 aria-describedby="inputGroup-sizing-default"

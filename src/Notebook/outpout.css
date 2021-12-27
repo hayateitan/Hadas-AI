@@ -1,0 +1,65 @@
+div#containerbaroptionsicon {
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 963px;
+    top: -36px;
+}
+div#changeHeightoutpoutblock {
+    width: 1013px;
+    height: auto;
+    background: #ffffff;
+    border: none;
+    box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+    border-radius: 7px;
+}
+.modal-content.lololala {
+    border: none;
+    box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+    border-radius: 7px;
+    left: 0px;
+    top: 1px;
+}
+svg#eyescachoutpout {
+    width: 24px;
+    left: -21px;
+    position: relative;
+}
+svg#tableicon1 {
+    position: absolute;
+    width: 27px;
+    right: 74px;
+}
+svg#tableicon2 {
+    position: absolute;
+    width: 27px;
+    right: 108px;
+}
+svg#tableicon3 {
+    position: absolute;
+    width: 27px;
+    right: 142px;
+}
+svg#tableicon4 {
+    position: absolute;
+    width: 27px;
+    right: 207px;
+}
+svg#tableicon5 {
+    position: absolute;
+    width: 27px;
+    right: 241px;
+}
+svg#tableicon6 {
+    position: absolute;
+    width: 27px;
+    right: 276px;
+}
+div#containeroutpout {
+    position: relative;
+    top: 129px;
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 133px;
+    margin-bottom: 81px;
+}

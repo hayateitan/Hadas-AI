@@ -14,6 +14,9 @@ import Database from "./Database/Database";
 import NbIp from "./NoteBookInProgress/NbIp";
 import Slack from "./Slack/Slack";
 import CreateDtabase from "./Database/CreateDtabase"
+import Outpout from "./Notebook/Outpout";
+import FormDatabase from "./Database/FormDatabase";
+import Mydatabase from "./Database/Mydatabase";
 
 function App() {
   return (
@@ -32,7 +35,9 @@ function App() {
           <Route exact path="/NbIp" component={() => <Container><NbIp /></Container>} />
           <Route exact path="/Slack" component={() => <Container><Slack /></Container>} />
           <Route exact path="/createdtabase" component={() => <Container><CreateDtabase /></Container>} />
-   
+          <Route exact path="/testoutpout" component={() => <Container><Outpout/> </Container>} />
+          <Route exact path="/formpostgree" component={() => <Container><FormDatabase/> </Container>} />
+          <Route exact path="/mydatabase" component={() => <Container><Mydatabase/> </Container>} />
         </Switch>
       </Router>
     </div>

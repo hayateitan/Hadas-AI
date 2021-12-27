@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
-function InputText({ OnTextChanged }) {
+function InputText({ OnTextChanged, value }) {
   const [inputext, setInputext] = useState();
 
   const onValueChanged = (e) => {
@@ -14,6 +14,7 @@ function InputText({ OnTextChanged }) {
       <Form.Control
         id="inputT"
         type="text"
+        defaultValue={value}
         placeholder="Type here"
         onChange={onValueChanged}
       />

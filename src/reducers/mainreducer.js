@@ -35,9 +35,16 @@ const reducer = produce((draft, action) => {
       console.log(payload)
       draft.librairies.push(payload)
       break;
+    case "SAVE_PROFILES_PREDICTION":
+      draft.predict = payload
+      break;
+      case "LOAD_OUTPOUT":
+        draft.outpout = payload
+        break;
     default:
       break;
   }
+  console.log(JSON.stringify(draft.predict))
 });
 
 export default reducer;

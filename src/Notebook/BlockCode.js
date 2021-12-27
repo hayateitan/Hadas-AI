@@ -4,22 +4,18 @@ import "./style.css";
 import Editeur from "./Editeur.js";
 import Explain from "./Predict.js";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { Button, Tooltip, Overlay, Badge } from 'react-bootstrap'
-import SubjectIcon from '@mui/icons-material/Subject';
-import CodeIcon from '@mui/icons-material/Code';
+import { Button, Tooltip, Overlay, Badge } from "react-bootstrap";
+import SubjectIcon from "@mui/icons-material/Subject";
+import CodeIcon from "@mui/icons-material/Code";
 import { v4 as uuidv4 } from "uuid";
-import ImageIcon from '@mui/icons-material/Image';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import ImageIcon from "@mui/icons-material/Image";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import Outpout from "./Outpout";
 
 function BlockCode(props) {
-
-
   const [editors, setEditors] = useState([]);
   const [show, setShow] = useState(false);
   const target = useRef(null);
-
-
-
 
   function handleOnDragEnd(result) {
     if (!result.destination) return;
@@ -70,59 +66,58 @@ function BlockCode(props) {
   };
   return (
     <PerfectScrollbar>
-
-
-
-
       <Button id="Biconhoverlay" ref={target} onClick={() => setShow(!show)}>
-        <AddCircleIcon id="iconhoverlay" ref={target} onClick={() => setShow(!show)} />
+        <AddCircleIcon
+          id="iconhoverlay"
+          ref={target}
+          onClick={() => setShow(!show)}
+        />
       </Button>
 
-
-
-      <Overlay target={target.current} show={show} placement="right" >
+      <Overlay target={target.current} show={show} placement="right">
         {(props) => (
-          <Tooltip id="overlay-example" {...props} className="in" >
+          <Tooltip id="overlay-example" {...props} className="in">
             <div id="B1">
-              <Badge onClick={addEditor} bg="none"><SubjectIcon id="iconbaroptionchoice" />TEXT</Badge>
+              <Badge onClick={addEditor} bg="none">
+                <SubjectIcon id="iconbaroptionchoice" />
+                TEXT
+              </Badge>
             </div>
             <div id="B2">
-              <Badge onClick={addPredict} bg="none" ><CodeIcon id="iconbaroptionchoice" />AI</Badge>
+              <Badge onClick={addPredict} bg="none">
+                <CodeIcon id="iconbaroptionchoice" />
+                AI
+              </Badge>
             </div>
             <div id="B3">
-              <Badge  bg="none" ><ImageIcon id="iconbaroptionchoice" />MEDIA</Badge>
+              <Badge bg="none">
+                <ImageIcon id="iconbaroptionchoice" />
+                MEDIA
+              </Badge>
             </div>
-
-
-
-
           </Tooltip>
         )}
       </Overlay>
 
-
-
-
-
-
-
-
       <div id="divSetDisplaynone">
         <div id="editeur-de-code">
-          <DragDropContext onDragEnd={handleOnDragEnd} >
+          <DragDropContext onDragEnd={handleOnDragEnd}>
             <Droppable droppableId="droppable">
               {(provided) => (
-                <div {...provided.droppableProps} ref={provided.innerRef}>
+                <div {...provided.droppableProps} id="divai" ref={provided.innerRef}>
                   {editors?.map((e, i) => createEditor(e, i))}
                   {provided.placeholder}
                 </div>
               )}
+
             </Droppable>
           </DragDropContext>
           {editors?.map((e) => logEditor(e))}
+         
         </div>
       </div>
-    </PerfectScrollbar >
+    
+    </PerfectScrollbar>
   );
 }
 

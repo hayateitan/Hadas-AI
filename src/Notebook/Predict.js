@@ -1,22 +1,21 @@
-import React, { useEffect, useState, useHistory } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Server from "../Config";
 import axios from "axios";
-import { Form, FormControl, Button, Modal, Table } from "react-bootstrap";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import { Form, FormControl, Button, Modal, Badge } from "react-bootstrap";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import InputNumber from "./InputNumber";
-import InputText from "./InputText";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
-import { v4 as uuidv4 } from "uuid";
-import MultipleSelect from "./SelectMultiple";
 import { GoSettings } from "react-icons/go";
-import MultipleSelect2 from "./SelectMultiple2";
 import Task from "./Task";
 import Budget from "./Budget";
-import Date from "./FilterDate";
+import PredictTable from "./PredictTable";
+import { FaRegComment } from "react-icons/fa";
+import TableTiUi from "./TableTiUi";
+import { VscRunAll } from "react-icons/vsc";
+import { IoSettingsOutline } from "react-icons/io5";
+import { ImEyeBlocked } from "react-icons/im";
+import { Tooltip, Overlay } from "react-bootstrap";
+import Outpout from "./Outpout";
 const Predict = ({ id }) => {
   const dispatch = useDispatch();
 
@@ -61,87 +60,17 @@ const Predict = ({ id }) => {
   const onColumnSelected = (col) => {
     dispatch({ type: "COLUMN_SELECTED", payload: col });
   };
+  const test150 = () => {
+    console.log("c bon ca marceh test150");
+  };
   const [lgShow, setLgShow] = useState(false);
   const [value, setValue] = useState();
   const [line, setLine] = useState([]);
-  const [tableth, setTableth] = useState();
-
-  const addline = () => {
-    let tab = [...line];
-    let newObj = {};
-    for (let col of value) {
-      newObj[col] = null;
-    }
-    newObj.id = uuidv4();
-    tab.push(newObj);
-
-    setLine(tab);
-  };
-
-
-  const onValueChangedT = (key, value) => {
-    console.log(`key :${key} value: ${value}`);
-  };
-  const onValueChangedD = (key, value) => {
-    console.log(`key :${key} value: ${value}`);
-  };
-  const onValueChangedN = (key, value) => {
-    console.log(`key :${key} value: ${value}`);
-  };
-  const createLine = (e, i) => {
-    return (
-      <>
-        <tr>
-          {value !== undefined
-            ? columns?.map((c, i) => {
-                if (value.includes(c.columnName)) {
-                  switch (c.columnType) {
-                    case "varchar":
-                      return (
-                        <td key={id} id={"inputext_" + id}>
-                          <InputText
-                            id={id}
-                            OnTextChanged={(v) => {
-                              onValueChangedT(id, v);
-                            }}
-                          />
-                        </td>
-                      );
-                    case "datetime":
-                      return (
-                        <td key={id} id={"inputDate_" + id}>
-                          <Date
-                            id={id}
-                            OnDateChanged={(v) => {
-                              onValueChangedD(id, v);
-                            }}
-                          />
-                        </td>
-                      );
-                    case "smallint":
-                      return (
-                        <td key={id} id={"inputNumber_" + id}>
-                          <InputNumber
-                            id={id}
-                            OnNumberChanged={(v) => {
-                              onValueChangedN(id, v);
-                            }}
-                          />
-                        </td>
-                      );
-                  }
-                }
-              })
-            : ""}
-        </tr>
-      </>
-    );
-  };
-
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
   return (
     <div id={"blockNotebook_" + id}>
       {" "}
-      
       <div id="containerselect">
         <div id={"nameOfblock" + id}>
           <FormControl
@@ -151,44 +80,89 @@ const Predict = ({ id }) => {
             id="nameOfblockPredict"
           />
         </div>
+        <div id="conatinerbuttonRun">
+          <Button id="Biconhoverlaybuttonrun" onClick={test150}>
+            <VscRunAll id="iconrun" />
+          </Button>
+          <p id="textbuttonrun">RUN</p>
+        </div>{" "}
+        <div id="buttonchaineeyescach">
+          <ImEyeBlocked id="eyescach" />
+        </div>
+        <div id="buttonchainecommentaire">
+          <FaRegComment id="buttoncommentaire" />
+        </div>
+        <div>
+          <div id="containerbuttonplus">
+            <Button
+              id="Biconhoverlaybuttonplus"
+              ref={target}
+              onClick={() => setShow(!show)}
+            >
+              <IoSettingsOutline
+                ref={target}
+                onClick={() => setShow(!show)}
+                id="iconbuttonplus"
+              />
+            </Button>
 
+            <Overlay target={target.current} show={show} placement="right">
+              {(props) => (
+                <Tooltip id="overlay-example" {...props} className="in">
+                  <div id="optionplus">
+                    <div id="iconsetting">
+                      <Badge bg="none" id="badgesetting">
+                        {" "}
+                        <GoSettings id="svgsetting" />
+                        <p id="textsetting">SETTING</p>
+                      </Badge>
+                    </div>
+                    <div id="buttonchainebudget">
+                      <Badge bg="none" id="badgebudget">
+                        {" "}
+                        <Budget />
+                        <p id="textBUDGET">BUDGET</p>
+                      </Badge>
+                    </div>
+                    <div id="buttonchaineimtable">
+                      <Badge bg="none" id="badgeindex">
+                        {" "}
+                        <TableTiUi /> <p id="textindex">INDEX</p>
+                      </Badge>
+                    </div>
+                  </div>
+                </Tooltip>
+              )}
+            </Overlay>
+          </div>
+         
+        </div>
         <div id="Buttonchainecontainer">
-          <Task />
-          <div id="iconsetting">
-            <GoSettings id="svgsetting" />
-          </div>
-          <div id="buttonchainenumero4">
-            <Budget />
-          </div>
           <div id="buttonChaineNumero1">
             <Form.Select onChange={(e) => onTableauSelected(e.target.value)}>
-              <option> Table </option>{" "}
+              <option> Pick a Data Source </option>{" "}
               {tables?.map((t) => (
                 <option key={t}> {t} </option>
               ))}
             </Form.Select>
           </div>
+          <Task />
           <div id="buttonChaineNumero2">
             <Form.Select onChange={(e) => onColumnSelected(e.target.value)}>
-              <option> Target </option>{" "}
+              <option> Define Your Target </option>{" "}
               {columns?.map((t) => (
                 <option key={t.columnName}> {t.columnName} </option>
               ))}
             </Form.Select>
           </div>
-          <div>
-            <MultipleSelect />
-          </div>
-          <div>
-            <MultipleSelect2 />
-          </div>
+
           <div id="buttonChaineNumero3">
             <Button
               id="buttonprofileofprediction"
               onClick={() => setLgShow(true)}
             >
               {" "}
-              Profile Builder{" "}
+              Build Prediction Profiles{" "}
             </Button>
 
             <Modal
@@ -198,7 +172,7 @@ const Predict = ({ id }) => {
               aria-labelledby="example-modal-sizes-title-lg"
               scrollable={true}
             >
-              <Modal.Header closeButton>
+              <Modal.Header>
                 <Modal.Title id="example-modal-sizes-title-lg">
                   <Autocomplete
                     multiple
@@ -219,78 +193,21 @@ const Predict = ({ id }) => {
                 </Modal.Title>{" "}
               </Modal.Header>{" "}
               <Modal.Body>
-                <Table striped bordered hover>
-                  <thead>
-                    <tr onChange={(e) => setTableth(e.target.value)}>
-                      {value?.map((t) => (
-                        <th key={t}> {t} </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      {value !== undefined
-                        ? columns?.map((c, i) => {
-                            console.log("id = " + i);
-                            console.log("selected = " + value);
-                            console.log(c);
-                            if (value.includes(c.columnName)) {
-                              switch (c.columnType) {
-                                case "varchar":
-                                  return (
-                                    <td key={id} id={"inputext_" + id}>
-                                      <InputText
-                                        id={id}
-                                        OnTextChanged={(v) => {
-                                          onValueChangedT(id, v);
-                                        }}
-                                      />
-                                    </td>
-                                  );
-                                case "datetime":
-                                  return (
-                                    <td key={id} id={"inputDate_" + id}>
-                                      <Date
-                                        id={id}
-                                        OnDateChanged={(v) => {
-                                          onValueChangedD(id, v);
-                                        }}
-                                      />
-                                    </td>
-                                  );
-                                case "smallint":
-                                  return (
-                                    <td key={id} id={"inputNumber_" + id}>
-                                      <InputNumber
-                                        id={id}
-                                        OnNumberChanged={(v) => {
-                                          onValueChangedN(id, v);
-                                        }}
-                                      />
-                                    </td>
-                                  );
-                              }
-                            }
-                          })
-                        : ""}
-                    </tr>
-
-                    {line?.map((e, i) => createLine(e, i))}
-
-                    <AddCircleIcon id="iconhoverlaymodal" onClick={addline} />
-                  </tbody>
-                </Table>
+                <PredictTable selectedColumns={value} columns={columns} />
               </Modal.Body>
             </Modal>
+           
           </div>
-          <div id="conatinerbuttonRun">
-            <DoubleArrowIcon id="iconrun" />
-          </div>{" "}
-          <div id="helpblock">
+
+          {/* <div id="helpblock">
             <HelpOutlineIcon />
-          </div>
+          </div> */}
         </div>
+     
       </div>
+      <div id="outpout">
+          <Outpout />
+          </div>
     </div>
   );
 };

@@ -343,3 +343,48 @@ svg#hubspotsvg {
   top: 12px;
   position: relative;
 }
+
+a#lienformpostgresql {
+  text-decoration: none;
+  color: #212529;
+}
+div#optionT {
+  position: absolute;
+  top: 116px;
+  left: 216px;
+}
+div#optionS {
+  position: absolute;
+  top: 116px;
+  left: 108px;
+}
+div#optionD {
+  position: absolute;
+  top: 116px;
+  left: 329px;
+}
+div#optionC {
+  position: absolute;
+  top: 116px;
+  left: 433px;
+}
+div#changeHeightmodalcreatedatabase {
+  position: absolute;
+  left: 107px;
+  top: 152px;
+  width: 400px;
+  height: 540px;
+}
+.modal-content.modalcreatedatabase {
+  position: relative;
+  top: 0px;
+  /* right: -815px; */
+  left: 0px;
+  border: none;
+  background: #f1f3f2;
+  box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+  border-radius: 7px;
+}
+.list-group.list-group-flush {
+  width: 489px;
+}

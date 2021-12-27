@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./inputnumber.css";
 import { Form } from "react-bootstrap";
 
-const InputNumber = ({ OnNumberChanged }) => {
+const InputNumber = ({ OnNumberChanged, value }) => {
   const [inputnumber, setInputnumber] = useState();
 
   const onValueChanged = (e) => {
@@ -15,6 +15,7 @@ const InputNumber = ({ OnNumberChanged }) => {
       <Form.Control
         id="inputN"
         type="number"
+        defaultValue={value}
         placeholder="Type a number"
         onChange={onValueChanged}
       />

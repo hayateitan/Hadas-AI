@@ -40,13 +40,7 @@ img#imgNavbar {
 	left: 10px;
 	position: relative;
 }
-input#searchnavbar {
-	width: 480px;
-	height: 45px;
-	color: rgb(198, 198, 198);
-	background: #082e40;
-	border: #082e40;
-}
+
 svg#iconnavbar {
 	display: block;
 	color: rgb(198, 198, 198);
@@ -124,4 +118,43 @@ div#NIN {
 div#NIF {
 	position: relative;
 	right: 72px;
+}
+div#lala {
+    background: #dadada;
+}
+div#containersearch {
+    position: absolute;
+    right: -70px;
+    top: 5px;
+}
+div#widthautosearchbar {
+    background: #ffffff;
+    height: 10px;
+    top: 20px;
+    position: absolute;
+}
+.popover-arrow {
+    position: absolute;
+    top: -1086px;
+    /* display: none; */
+    /* background: #ffffff00; */
+}
+div#widthautosearchbar {
+    background: #f1f3f200;
+    height: 6px;
+    top: 26px;
+    position: absolute;
+}
+img#logoNavbar {
+    width: 156px;
+}
+div#NIS {
+    right: 162px;
+    position: relative;
+    top: -1px;
+}
+div#containersearchbar {
+    position: absolute;
+    right: -33px;
+    top: -15px;
 }

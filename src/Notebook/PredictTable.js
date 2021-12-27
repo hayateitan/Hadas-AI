@@ -1,73 +1,89 @@
-import React from "react";
+import React, {useState} from "react";
 import { Table } from "react-bootstrap";
 import InputNumber from "./InputNumber";
 import InputText from "./InputText";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
+import { v4 as uuidv4 } from "uuid";
 import Date from "./FilterDate";
+import { useDispatch, useSelector } from "react-redux";
 
-const PredictTable = (props) => {
-  const [rows, setRows] = useState([]);
+const PredictTable = ({selectedColumns, columns}) => {
+  const dispatch = useDispatch()
+  const rows = useSelector(store => store.predict)
 
   const addline = () => {
     let tab = [...rows];
     let newObj = {};
-    for (let col of value) {
+    for (let col of selectedColumns) {
       newObj[col] = null;
     }
     newObj.id = uuidv4();
     tab.push(newObj);
 
-    setRows(tab);
+    dispatch({type: "SAVE_PROFILES_PREDICTION", payload: tab})
   };
+
+  const onValueChanged = (id, name, val, type) => {
+    const row = rows.find(r => r.id === id)
+    const i = rows.indexOf(row)
+    let newRow = {...row}
+
+    if (newRow !== undefined) {
+      newRow[name] = val
+    }
+
+    const tab = [...rows.slice(0, i), newRow, ...rows.slice(i+1, rows.length)]
+    
+    dispatch({type: "SAVE_PROFILES_PREDICTION", payload: tab})
+  }
+
   return (
     <div>
       <Table striped bordered hover>
         <thead>
           <tr>
-            {props.selectedColumns?.map((t) => (
+            {selectedColumns?.map((t) => (
               <th key={t}> {t} </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {rows?.maps((r) => (
-            <tr>
-              {props.selectedColumns !== undefined
-                ? props.columns?.map((c, i) => {
-                    console.log("id = " + i);
-                    console.log("selected = " + value);
-                    console.log(c);
-                    if (props.selectedColumns.includes(c.columnName)) {
+          {rows?.map((r) => (
+            <tr key={"row_"+r.id}>
+              {selectedColumns !== undefined
+                ? columns?.map((c, i) => {
+                    if (selectedColumns.includes(c.columnName)) {
+                      console.log(c.columnType)
                       switch (c.columnType) {
                         case "varchar":
                           return (
-                            <td key={id} id={"inputext_" + id}>
+                            <td key={`col_${i}_`+r.id}>
                               <InputText
-                                id={id}
+                                value={r[c.columnName]}
                                 OnTextChanged={(v) => {
-                                  onValueChangedT(id, v);
+                                  onValueChanged(r.id, c.columnName, v, 'text');
                                 }}
                               />
                             </td>
                           );
                         case "datetime":
                           return (
-                            <td key={id} id={"inputDate_" + id}>
+                            <td key={`col_${i}_`+r.id}>
                               <Date
-                                id={id}
+                                value={r[c.columnName]}
                                 OnDateChanged={(v) => {
-                                  onValueChangedD(id, v);
+                                  onValueChanged(r.id, c.columnName, v, 'date');
                                 }}
                               />
                             </td>
                           );
-                        case "smallint":
+                        case "smallint","float":
                           return (
-                            <td key={id} id={"inputNumber_" + id}>
+                            <td key={`col_${i}_`+r.id}>
                               <InputNumber
-                                id={id}
+                               value={r[c.columnName]}
                                 OnNumberChanged={(v) => {
-                                  onValueChangedN(id, v);
+                                  onValueChanged(r.id, c.columnName,v, 'number');
                                 }}
                               />
                             </td>

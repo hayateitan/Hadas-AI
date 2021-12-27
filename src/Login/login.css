@@ -92,8 +92,9 @@ button#buttonlogin {
     background: #072037;
     border-color: #072037;
 }
-
-
-label.form-label {
-    color: #fcfcfd;
+label#labellogin {
+    top: -5px;
+    right: -3px;
+    position: relative;
+    color: #f4f4f4;
 }

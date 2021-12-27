@@ -1,0 +1,37 @@
+[
+  {
+    "retail_price": "12",
+    "uses_ad_boosts": "0",
+    "rating": "3.5",
+    "merchant_rating": "4",
+    "merchant_has_profile_picture": "1"
+  },
+  {
+    "retail_price": "20",
+    "uses_ad_boosts": "0",
+    "rating": "4",
+    "merchant_rating": "4",
+    "merchant_has_profile_picture": "1"
+  },
+  {
+    "retail_price": "30",
+    "uses_ad_boosts": "0",
+    "rating": "4",
+    "merchant_rating": "4",
+    "merchant_has_profile_picture": "1"
+  },
+  {
+    "retail_price": "50",
+    "uses_ad_boosts": "0",
+    "rating": "4",
+    "merchant_rating": "4",
+    "merchant_has_profile_picture": "0"
+  },
+  {
+    "retail_price": "50",
+    "uses_ad_boosts": "1",
+    "rating": "4.5",
+    "merchant_rating": "4",
+    "merchant_has_profile_picture": "1"
+  }
+]

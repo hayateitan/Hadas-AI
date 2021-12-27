@@ -1,0 +1,126 @@
+div#containerlist {
+    position: relative;
+    top: 192px;
+    left: 107px;
+    width: -675px;
+}
+div#containerlistvariantflush {
+    width: 1204px;
+}
+p#pN {
+    position: relative;
+    left: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+    top: 6px;
+}
+p#pC2 {
+    position: relative;
+    left: 1048px;
+    font-size: 14px;
+    font-weight: 700;
+    top: -144px;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+p#pC1 {
+    position: relative;
+    left: 875px;
+    font-size: 14px;
+    top: -107px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+p#pL {
+    position: relative;
+    left: 683px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    top: -69px;
+    width: fit-content;
+}
+p#pM {
+    position: relative;
+    left: 484px;
+    font-size: 14px;
+    top: -31px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+div#entetelistitem {
+    height: 39px;
+}
+p#pNt {
+    position: relative;
+    left: 57px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+p#pMB {
+    position: relative;
+    left: 484px;
+    font-size: 14px;
+    top: -45px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+p#pLM {
+    position: relative;
+    left: 687px;
+    font-size: 14px;
+    top: -81px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+p#pC1B {
+    position: relative;
+    left: 874px;
+    font-size: 14px;
+    top: -118px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+p#pC2C {
+    position: relative;
+    left: 1045px;
+    font-size: 14px;
+    top: -156px;
+    font-weight: 700;
+    color: #082e40;
+    font-family: raleway;
+    width: fit-content;
+}
+div#listitemaffiche {
+    height: 47px;
+}
+svg#iconpostgresqlaffichedb {
+    position: absolute;
+    left: 19px;
+    width: 31px;
+}
+svg#iconpencileditaffichedb {
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    width: 22px;
+}

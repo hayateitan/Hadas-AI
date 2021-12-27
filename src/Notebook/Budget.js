@@ -1,34 +1,17 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import './Budget.css'
+import React, { useState } from "react";
+import { Form } from "react-bootstrap";
+import "./Budget.css";
+import { AiOutlineFieldTime } from "react-icons/ai";
 const Budget = () => {
-  const [budget, setBudget] = React.useState('');
-  const handleChange = (event) => {
-    setBudget(event.target.value);
-  };
+  const [budget, setBudget] = useState();
+
   return (
     <div>
-      <Box sx={{ minWidth: 120 }}>
-        <FormControl>
-          <InputLabel id="selt">Budget</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={budget}
-            label="Budget"
-            onChange={handleChange}
-          >
-            <MenuItem value={10}>Budget</MenuItem>
-            <MenuItem value={20}>Low</MenuItem>
-            <MenuItem value={30}>Standard</MenuItem>
-            <MenuItem value={40}>High</MenuItem>
-          </Select>
-        </FormControl>
-      </Box>
+      <AiOutlineFieldTime id='buttontimebudget' />
+      {/* <Form.Select onChange={(e) => setBudget(e.target.value)}>
+        <option> Budget </option> <option> Low </option>{" "}
+        <option> Standard </option> <option> High </option>{" "}
+      </Form.Select> */}
     </div>
   );
 };

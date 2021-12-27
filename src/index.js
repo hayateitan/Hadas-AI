@@ -13,6 +13,7 @@ const initialState = {
   columns: [],
   filters: {},
   librairies: [],
+  predict:[]
 };
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk));
