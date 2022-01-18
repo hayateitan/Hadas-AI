@@ -47,12 +47,13 @@ div#PavatarL4 {
 }
 button#buttonLibraryText {
   position: relative;
-  top: 89px;
-  left: right;
+  top: 19px;
   background: #7fffd400;
-  left: 137px;
-  border: aliceblue;
-  font-size: larger;
+  left: 411px;
+  border-radius: 33px;
+  border: 1px solid #092e3f;
+  font-size: 18px;
+  width: 173px;
 }
 div#modallibrary {
   width: 297px;
@@ -63,23 +64,9 @@ div#modallibrary {
   left: -16px;
   position: relative;
 }
-div#titleCreateNotebook {
-  top: 95px;
-  width: 1140px;
-  left: 137px;
-}
-div#descriptionCreateNoteBook {
-  top: 86px;
-  width: 1140px;
-  left: 137px;
-}
-input#floatingInputCustom {
-  background: #ffffff00;
-  border: aliceblue;
-  outline: none !important;
-  box-shadow: none;
-  text-align: start;
-}
+
+
+
 
 span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt-MuiTypography-root {
   font-size: 23px;
@@ -90,14 +77,69 @@ span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt
 
 svg#iconaddtolibrary {
   position: relative;
-  left: 254px;
+  left: 115px;
   width: 23px;
   height: 23px;
-  top: -42px;
+  top: -96px;
 }
 label.form-check-label {
   color: #082e40;
   font-size: 19px;
   position: relative;
   left: 82px;
+}
+label#createlibraryname {
+  top: 0px;
+  font-size: 16px;
+  right: -3px;
+  position: relative;
+}
+label#createlibrarydescription {
+  top: 1px;
+  right: -3px;
+  position: relative;
+  font-size: 16px;
+}
+svg#iconaddtolibrarycreatenotebook {
+  width: 24px;
+  top: -7px;
+  right: 59px;
+  position: relative;
+}
+a#liensiconnext {
+  position: relative;
+  top: -270px;
+  left: 789px;
+}
+svg#flechenext {
+  width: 55px;
+  height: 55px;
+}
+p#ptextaddtolibrary {
+  position: relative;
+  top: -36px;
+  left: 15px;
+}
+div#listgroupaddlibrary {
+  width: auto;
+}
+
+input[type=checkbox],input[type="checkbox"]:checked {
+  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -5px;
+  right: 7px;
+  box-shadow: none;
+}
+.form-check-input[type=checkbox] {
+  border-radius: 1.25em;
+}
+p#pdescriptionaddlibrary {
+  width: 227px;
+  text-align: initial;
+  position: relative;
+  left: 25px;
+  color: #082e40bf;
 }

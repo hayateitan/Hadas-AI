@@ -375,16 +375,27 @@ div#changeHeightmodalcreatedatabase {
   width: 400px;
   height: 540px;
 }
-.modal-content.modalcreatedatabase {
-  position: relative;
-  top: 0px;
-  /* right: -815px; */
-  left: 0px;
-  border: none;
-  background: #f1f3f2;
-  box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
-  border-radius: 7px;
+div#listcreatedatabase {
+  width: 400px;
 }
-.list-group.list-group-flush {
-  width: 489px;
+.modal-content.modalcreatedatabase {
+  border: none;
+}
+svg#iconlistgroup {
+  position: absolute;
+  right: 353px;
+  width: 30px;
+  top: 3px;
+}
+svg#iconlistgroupcvs {
+  position: absolute;
+  right: 359px;
+  width: 21px;
+  top: 3px;
+}
+svg#iconlistgroupsaleforce {
+  position: absolute;
+  right: 349px;
+  width: 36px;
+  top: 3px;
 }

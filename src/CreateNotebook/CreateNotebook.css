@@ -1,8 +1,4 @@
-button#ButonnNext {
-	position: relative;
-	left: 1211px;
-	top:321px;
-}
+
 div#ContainerAA {
 	position: relative;
 	top: 260px;
@@ -11,4 +7,29 @@ div#ContainerAA {
 	width: 1140px;
 	left: 151px;
 	border-radius: 5px;
+}
+div#containercreatenotebook {
+    width: fit-content;
+    position: absolute;
+    top: 120px;
+    left: 146px;
+}
+h1#createnotebook {
+    position: absolute;
+    top: 139px;
+    left: 146px;
+    font-family: raleway;
+    color: #092e3f;
+    font-size: 31px;
+}
+p#addtolibraryptexticonfleche {
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    color: #082e40;
+}
+a#liensiconnext {
+    position: relative;
+    top: -437px;
+    left: 635px;
 }

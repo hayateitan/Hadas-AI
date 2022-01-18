@@ -1,10 +1,8 @@
 import React from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import "./formdatabase.css";
-import { Link } from "react-router-dom";
 import { IoIosInformationCircle } from "react-icons/io";
 const FormDatabase = () => {
-
   return (
     <div id="containerformdatabase">
       <Form id="formimportdatabase">

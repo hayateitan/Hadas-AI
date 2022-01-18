@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { InputGroup, FormControl, Button, Form } from "react-bootstrap";
+import React, { useState } from "react";
+import { FormControl, Button, Form } from "react-bootstrap";
 import "./login.css";
 import Logo from "../assets/logoLogin.png";
 import axios from "axios";
-import server from "../Config";
+import server, { nodejs } from "../Config";
 
 const Login = (props) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  console.log(password);
 
   const doSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${server}/login`, { LoginName: username, LoginPassword: password })
+      .post(`${nodejs}/login`, { name: username, password: password })
       .then((res) => {
         console.log(res);
         if (res.status === 200) {
-          sessionStorage.setItem("jwt", res.data);
+          //sessionStorage.setItem("jwt", res.data);
+          sessionStorage.setItem("clé", res.data);
           props.history.push("/Home");
         } else {
           console.log("erreur");
@@ -53,9 +52,9 @@ const Login = (props) => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Remember me" />
-            </Form.Group>
+            {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Remember me" id />
+            </Form.Group> */}
             <Button variant="primary" type="submit" id="buttonlogin">
               Sign In
             </Button>

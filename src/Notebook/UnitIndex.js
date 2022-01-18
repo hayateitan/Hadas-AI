@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useHistory } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import { useTheme } from "@mui/material/styles";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -7,18 +7,18 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./style.css";
 
-const names = [
-  "Oliver Hansen",
-  "Van Henry",
-  "April Tucker",
-  "Ralph Hubbard",
-  "Omar Alexander",
-  "Carlos Abbott",
-  "Miriam Wagner",
-  "Bradley Wilkerson",
-  "Virginia Andrews",
-  "Kelly Snyder",
-];
+// const names = [
+//   "Oliver Hansen",
+//   "Van Henry",
+//   "April Tucker",
+//   "Ralph Hubbard",
+//   "Omar Alexander",
+//   "Carlos Abbott",
+//   "Miriam Wagner",
+//   "Bradley Wilkerson",
+//   "Virginia Andrews",
+//   "Kelly Snyder",
+// ];
 
 function getStyles(name, personName, theme) {
   return {
@@ -56,7 +56,7 @@ export default function MultipleSelect() {
           value={personName}
           onChange={handleChange}
         >
-         {columns?.map((t) => (
+          {columns?.map((t) => (
             <MenuItem
               key={t.columnName}
               value={t.columnName}

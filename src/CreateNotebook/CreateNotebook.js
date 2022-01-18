@@ -1,38 +1,33 @@
-import React from 'react'
-import ChoiceBuisnessDomain from './ChoiceBuisnessDomain'
-import ChoiceLibrary from './ChoiceLibrary'
-import TagsBar from './TagsBar'
-import TeamSharing from './TeamSharing'
-import AdvancedMode from './AdvancedMode'
-import PerfectScrollbar from "react-perfect-scrollbar";
-import AlgoOption from './AlgoOption'
-import { Button } from 'react-bootstrap'
-import './CreateNotebook.css'
+import React from "react";
+import ChoiceLibrary from "./ChoiceLibrary";
+import TagsBar from "./TagsBar";
+import "./CreateNotebook.css";
 import { Link } from "react-router-dom";
+import AccesNotebook from "./AccesNotebook";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Formtitle from "./FormtitleCreateNotebook";
+
 const CreateNotebook = () => {
-    const selectedTags = tags => {
-        console.log(tags);
-    };
-    return (
-        <div >
-            <PerfectScrollbar>
+  const selectedTags = (tags) => {
+    console.log(tags);
+  };
 
-                {/* <ChoiceBuisnessDomain /> */}
-                <ChoiceLibrary />
-                <TagsBar selectedTags={selectedTags} tags={[]} />
-                {/* <TeamSharing /> */}
-                {/* <div id="ContainerAA">
-                    <AdvancedMode />
-                    <AlgoOption />
-                </div> */}
-                <Link to="/Predict"  >
-                    <Button id="ButonnNext" >Next</Button>
-                </Link>
+  return (
+    <div>
+      <h1 id="createnotebook">Create Notebook</h1>
+      <div id="containercreatenotebook">
+        <ChoiceLibrary />
+        <Formtitle />
+        <TagsBar selectedTags={selectedTags} tags={[]} />
 
-            </PerfectScrollbar>
+        <AccesNotebook />
+        <Link to="/Predict" id="liensiconnext">
+          <HiOutlineArrowNarrowRight id="flechenext" />
+          <p id="addtolibraryptexticonfleche">Next</p>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default CreateNotebook
+export default CreateNotebook;

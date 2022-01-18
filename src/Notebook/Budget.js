@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import React from "react";
+// import { Form } from "react-bootstrap";
 import "./Budget.css";
 import { AiOutlineFieldTime } from "react-icons/ai";
 const Budget = () => {
-  const [budget, setBudget] = useState();
+  // const [budget, setBudget] = useState();
 
   return (
     <div>
-      <AiOutlineFieldTime id='buttontimebudget' />
+      <AiOutlineFieldTime id="buttontimebudget" />
       {/* <Form.Select onChange={(e) => setBudget(e.target.value)}>
         <option> Budget </option> <option> Low </option>{" "}
         <option> Standard </option> <option> High </option>{" "}

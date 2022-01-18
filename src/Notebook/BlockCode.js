@@ -10,7 +10,6 @@ import CodeIcon from "@mui/icons-material/Code";
 import { v4 as uuidv4 } from "uuid";
 import ImageIcon from "@mui/icons-material/Image";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import Outpout from "./Outpout";
 
 function BlockCode(props) {
   const [editors, setEditors] = useState([]);
@@ -104,19 +103,20 @@ function BlockCode(props) {
           <DragDropContext onDragEnd={handleOnDragEnd}>
             <Droppable droppableId="droppable">
               {(provided) => (
-                <div {...provided.droppableProps} id="divai" ref={provided.innerRef}>
+                <div
+                  {...provided.droppableProps}
+                  id="divai"
+                  ref={provided.innerRef}
+                >
                   {editors?.map((e, i) => createEditor(e, i))}
                   {provided.placeholder}
                 </div>
               )}
-
             </Droppable>
           </DragDropContext>
           {editors?.map((e) => logEditor(e))}
-         
         </div>
       </div>
-    
     </PerfectScrollbar>
   );
 }

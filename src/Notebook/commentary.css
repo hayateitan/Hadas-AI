@@ -1,0 +1,23 @@
+div#containermodalcommentarybox {
+    width: 1014px;
+}
+.modal-content.modalcommentarybox {
+  box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+  border-radius: 7px;
+  border: none;
+}
+input#inputaddcomment {
+  position: relative;
+  top: -14px;
+  width: 302px;
+  /* left: 1058px; */
+  right: 0px;
+  box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+  border-radius: 2px;
+}
+ svg#iconsendaddcommentary {
+    left: 250px;
+    position: absolute;
+    top: 497px;
+    width: 30px;
+} 

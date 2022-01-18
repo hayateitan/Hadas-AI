@@ -1,100 +1,100 @@
-
-#backgroundLogin{
-    background-image: url('../assets/backgroundlogin5.jpeg'); 
-    background-repeat: no-repeat;
-   background-size: cover;
-    height: 100vh;
-    /* --tw-bg-opacity: 1; */
-    /* background-color: rgba(79,33,131,var(--tw-bg-opacity)); */
-    /* background: #0818278c; */
-
+#backgroundLogin {
+  background-image: url("../assets/backgroundlogin5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* --tw-bg-opacity: 1; */
+  /* background-color: rgba(79,33,131,var(--tw-bg-opacity)); */
+  /* background: #0818278c; */
 }
 
-
 input#formBasicEmail {
-    height: 44px;
-    padding: 12px;
+  height: 44px;
+  padding: 12px;
 }
 
 input#formBasicPassword {
-    height: 44px;
-    padding: 12px;
+  height: 44px;
+  padding: 12px;
 }
 
 form#formlogin {
-    position: relative;
-    right: 76px;
-    width: 344px;
-    margin: auto;
-    top: 65px;
+  position: relative;
+  right: 76px;
+  width: 344px;
+  margin: auto;
+  top: 65px;
 }
 
 label.form-check-label {
-    color: #fcfdfd;
-    font-size: 14px;
+  color: #fcfdfd;
+  font-size: 14px;
 }
 
 div#fromLogin {
-    margin: auto;
-    width: 379px;
-    height: 461px;
-    position: relative;
-    top: 145px;
-    z-index: 1;
-    background: #081827;
-    border-radius: 11px;
+  margin: auto;
+  width: 379px;
+  height: 461px;
+  position: relative;
+  top: 145px;
+  z-index: 1;
+  background: #081827;
+  border-radius: 11px;
 }
 div#containerLogin {
-    position: relative;
-    top: 10px;
-    left: 79px;
+  position: relative;
+  top: 10px;
+  left: 79px;
 }
 .mb-3.input-group {
-    width: 189px;
-    height: 45px;
-    border-radius: 3px;
-    border: 1px solid rgb(207 207 207);
-    right: 49px;
-    left: 27px;
-    margin: -18px;
+  width: 189px;
+  height: 45px;
+  border-radius: 3px;
+  border: 1px solid rgb(207 207 207);
+  right: 49px;
+  left: 27px;
+  margin: -18px;
 }
 input.form-control {
-    text-align: center;
-    background: rgb(244 244 244);
+  text-align: center;
+  background: rgb(244 244 244);
 }
 img#imglogin {
-    height: 97px;
-    width: 220px;
-    position: relative;
-    top: 27px;
+  height: 97px;
+  width: 220px;
+  position: relative;
+  top: 27px;
 }
 
 p#textforgotlogin {
-    position: relative;
-    left:135px;
-    /* font-size: 14px; */
-    font-size: 14px;
-    line-height: 18px;
-    color: rgb(198 198 198);
-    top: -12px;
+  position: relative;
+  left: 135px;
+  /* font-size: 14px; */
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(198 198 198);
+  top: -12px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button#buttonlogin {
-    width: 344px;
-    height: 44px;
-    font-family: inherit;
-    line-height: 1.25rem;
-    font-weight: 700;
-    background: #072037;
-    border-color: #072037;
+  width: 344px;
+  color: white;
+  height: 44px;
+  font-family: inherit;
+  top: 26px;
+  line-height: 1.25rem;
+  position: relative;
+  font-weight: 700;
+  background: #072037;
+  border-color: #072037;
 }
 label#labellogin {
-    top: -5px;
-    right: -3px;
-    position: relative;
-    color: #f4f4f4;
+  top: -5px;
+  right: -3px;
+  position: relative;
+  color: #f4f4f4;
 }

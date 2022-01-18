@@ -1,10 +1,8 @@
 import { React, useState, useRef } from "react";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Overlay, Popover } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StickyBallLoading } from "react-loadingg";
-import shimoneicon from "../assets/shimone.jpg"
-import Avatar from '@mui/material/Avatar';
+import shimoneicon from "../assets/shimone.jpg";
+import Avatar from "@mui/material/Avatar";
 
 const Account = () => {
   const [show, setShow] = useState(false);
@@ -18,13 +16,8 @@ const Account = () => {
 
   return (
     <div ref={ref}>
-      <Avatar alt="Remy Sharp" src={shimoneicon}  onClick={handleClick} />
-      {/* <FontAwesomeIcon
-        icon={faUser}
-        onClick={handleClick}
-        color="white"
-        size="lg"
-      /> */}
+      <Avatar alt="Remy Sharp" src={shimoneicon} onClick={handleClick} />
+
       <Overlay
         show={show}
         target={target}

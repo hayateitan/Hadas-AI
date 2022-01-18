@@ -1,0 +1,38 @@
+div#descriptionCreateNoteBook {
+    top: 121px;
+    width: fit-content;
+    left: 128px;
+    position: absolute;
+  }
+  div#titleCreateNotebook {
+    top: 50px;
+    width: fit-content;
+    left: 68px;
+    position: absolute;
+  }
+  label#labelcreatenotebooktitle {
+    top: 45px;
+    right: 64px;
+    position: relative;
+    font-size: 20px;
+  }
+  input#floatingInputCustom1 {
+    border: aliceblue;
+    width: 628px;
+    outline: none !important;
+    box-shadow: none;
+    text-align: start;
+  }
+  label#labelcreatenotebookdescription {
+    top: 45px;
+    right: 123px;
+    position: relative;
+    font-size: 20px;
+  }
+  input#floatingInputCustom2 {
+    border: aliceblue;
+    width: 569px;
+    outline: none !important;
+    box-shadow: none;
+    text-align: start;
+  }

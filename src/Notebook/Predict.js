@@ -16,12 +16,14 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { ImEyeBlocked } from "react-icons/im";
 import { Tooltip, Overlay } from "react-bootstrap";
 import Outpout from "./Outpout";
+import Commentary from "./Commentary";
+
 const Predict = ({ id }) => {
   const dispatch = useDispatch();
 
   const tables = useSelector((store) => store.tables);
   const columns = useSelector((store) => store.columns);
-  const selectedColumns = useSelector((store) => store.selectedColumn);
+  // const selectedColumns = useSelector((store) => store.selectedColumn);
   //let history = useHistory();
   let token = sessionStorage.getItem("jwt");
   /*if (token === null || token === undefined) {
@@ -65,9 +67,33 @@ const Predict = ({ id }) => {
   };
   const [lgShow, setLgShow] = useState(false);
   const [value, setValue] = useState();
-  const [line, setLine] = useState([]);
+  // const [line, setLine] = useState([]);
   const [show, setShow] = useState(false);
   const target = useRef(null);
+
+  const [cachecommentarybox, setCachecommentarybox] = useState(true);
+
+  function statecachecommentarybox() {
+    if (cachecommentarybox === false) {
+      setCachecommentarybox(true);
+    }
+    if (cachecommentarybox === true) {
+      setCachecommentarybox(false);
+    }
+  }
+  function cacheCommentaryBox() {
+    if (cachecommentarybox === true) {
+      document.getElementById("divcommentaryboxcontainer").style.display =
+        "none";
+    }
+    if (cachecommentarybox === false) {
+      document.getElementById("divcommentaryboxcontainer").style.display =
+        "block";
+    }
+  }
+  useEffect(() => {
+    cacheCommentaryBox();
+  });
   return (
     <div id={"blockNotebook_" + id}>
       {" "}
@@ -90,7 +116,11 @@ const Predict = ({ id }) => {
           <ImEyeBlocked id="eyescach" />
         </div>
         <div id="buttonchainecommentaire">
-          <FaRegComment id="buttoncommentaire" />
+          <FaRegComment
+            id="buttoncommentaire"
+            type="button"
+            onClick={statecachecommentarybox}
+          />
         </div>
         <div>
           <div id="containerbuttonplus">
@@ -135,7 +165,6 @@ const Predict = ({ id }) => {
               )}
             </Overlay>
           </div>
-         
         </div>
         <div id="Buttonchainecontainer">
           <div id="buttonChaineNumero1">
@@ -196,18 +225,19 @@ const Predict = ({ id }) => {
                 <PredictTable selectedColumns={value} columns={columns} />
               </Modal.Body>
             </Modal>
-           
           </div>
 
           {/* <div id="helpblock">
             <HelpOutlineIcon />
           </div> */}
         </div>
-     
       </div>
       <div id="outpout">
-          <Outpout />
-          </div>
+        <Outpout />
+      </div>
+      <div id="divcommentaryboxcontainer">
+        <Commentary />
+      </div>
     </div>
   );
 };

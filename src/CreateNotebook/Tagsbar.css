@@ -9,17 +9,23 @@
 } */
 .tags-input {
 	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	min-height: 48px;
-	width: 1140px;
-	padding: 0 8px;
-	border: 1px solid rgb(241 243 242);
-	border-radius: 6px;
-	position: relative;
-	top: 191px;
-	left: 146px;
-	background: #d7dcda;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 48px;
+    width: 631px;
+    padding: 0 8px;
+    border: 1px solid rgb(241 243 242);
+    border-radius: 6px;
+    position: relative;
+	top: 152px;
+    left: 66px;
+    background: #f0f3f2;
+}
+label#labelcreatenotebooktagsbar {
+    top: 201px;
+    left: 6px;
+    font-size: 20px;
+    position: relative;
 }
 input {
 	flex: 1;
@@ -27,7 +33,7 @@ input {
 	height: 46px;
 	font-size: 14px;
 	padding: 4px 0 0 0;
-	background: #f1f3f2;
+    background: #f4f4f4;
 }
 :focus {
 	outline: transparent;

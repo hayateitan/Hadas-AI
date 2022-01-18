@@ -3,7 +3,6 @@ import Login from './Login/Login'
 import Container from './Container'
 import Home from './Home/Home'
 import Notebook from './Notebook/Notebook'
-import Predict from './Notebook/Predict'
 import Repository from './Notebook/RepositoryNotebook'
 import CreateNotebook from './CreateNotebook/CreateNotebook'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,6 +16,7 @@ import CreateDtabase from "./Database/CreateDtabase"
 import Outpout from "./Notebook/Outpout";
 import FormDatabase from "./Database/FormDatabase";
 import Mydatabase from "./Database/Mydatabase";
+
 
 function App() {
   return (

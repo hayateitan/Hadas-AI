@@ -1,7 +1,7 @@
 form#formimportdatabase {
   width: 506px;
   position: relative;
-  top: 71px;
+  top: 50px;
   left: 64px;
 }
 input#Username,
@@ -20,8 +20,8 @@ div#containerformdatabase {
     background: #f1f3f1;
     position: absolute;
     left: 533px;
-    top: 179px;
-    height: 545px;
+    top: 194px;
+    height: 524px;
     width: 862px;
     border: none;
     display: none;
@@ -86,8 +86,8 @@ div#containertexthelp\ {
     width: 282px;
     position: absolute;
     left: 552px;
-    top: 62px;
-    height: 428px;
+    top: 46px;
+    height: 414px;
     background: #ebebeb;
     /* border: none; */
     /* box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px; */
@@ -110,51 +110,55 @@ svg#iconinformation {
 }
 p#premiertextp {
     position: relative;
-    left: 55px;
+    left: 45px;
     top: 20px;
     color: #082e40;
 }
 p#deuxiemetextp {
     color: #0c5172;
     position: relative;
-    left: 56px;
+    left: 45px;
+    top: 0px;
 }
 p#troisiemeemetextp {
     position: relative;
-    left: 56px;
+    left: 45px;
     top: 14px;
     color: #082e40;
 }
 p#quatriemetextp {
     position: relative;
-    left: 56px;
+    left: 45px;
     color: #8c9ea7;
+    top: 0px;
 }
 p#cinquiemetextp {
     position: relative;
-    left: 56px;
+    left: 45px;
     color: #8c9ea7;
+    
 }
 p#sixemetextp {
     position: relative;
-    left: 60px;
+    left: 45px;
     color: #082e40;
+    top: 0px;
 }
 p#septemetextp {
     color: #0c5172;
     position: relative;
-    left: 60px;
+    left: 45px;
     top: -14px;
 }
 p#huiptemetextp {
     color: #0c5172;
     position: relative;
-    left: 60px;
+    left: 45px;
     top: -29px;
 }
 p#neufemetextp {
     color: #0c5172;
     position: relative;
-    left: 60px;
+    left: 45px;
     top: -43px;
 }

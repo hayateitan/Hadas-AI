@@ -226,8 +226,8 @@ div#Messages2photo {
   /* margin: auto; */
   top: 139px;
   border: 2px solid transparent;
-  left: 132px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  left: 42px;
+  box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
   border-radius: 7px;
   margin-bottom: 95px;
 }
@@ -273,7 +273,7 @@ div#textblock {
 
 div#containerselect {
   position: relative;
-  left: 132px;
+  left: 38px;
   width: 1013px;
   height: 89px;
   z-index: 23;
@@ -461,6 +461,8 @@ p#PcreateNotebook {
   font-size: 23px;
   font-family: inherit;
   color: #718096;
+  right: 0px;
+  top: 0px;
 }
 
 svg#iconCreateNoteBook {
@@ -472,7 +474,7 @@ svg#iconCreateNoteBook {
 button#Biconhoverlay {
   position: relative;
   top: 115px;
-  left: 133px;
+  left: 31px;
   height: 29px;
   width: 30px;
   border-radius: 20px;
@@ -651,18 +653,7 @@ svg#arrowcreatedatabaselistgroup {
   left: 354px;
   top: 3px;
 }
-svg#iconlistgroup {
-  position: absolute;
-  right: 450px;
-  width: 30px;
-  top: 3px;
-}
-svg#iconlistgroupcvs {
-  position: absolute;
-  right: 456px;
-  width: 21px;
-  top: 3px;
-}
+
 p#textlistdataimport {
   font-family: raleway;
   font-weight: 700;
@@ -671,12 +662,7 @@ p#textlistdataimport {
   left: 60px;
   top: 5px;
 }
-svg#iconlistgroupsaleforce {
-  position: absolute;
-  right: 446px;
-  width: 36px;
-  top: 3px;
-}
+
 svg#iconSearch {
   height: 25px;
 }
@@ -705,10 +691,10 @@ button#Biconhoverlaybuttonplus {
 }
 
 svg#iconbuttonplus {
-  width: 26px;
+  width: 23px;
   position: absolute;
-  top: -5px;
-  right: -3px;
+  top: 6px;
+  right: -755px;
 }
 
 p#textbuttonrun {
@@ -756,4 +742,12 @@ button#Biconhoverlaybuttonrun {
   border: 1px solid#ffffff;
   outline: none !important;
   box-shadow: none;
+}
+div#divai {
+  width: fit-content;
+}
+div#divcommentaryboxcontainer {
+  position: relative;
+  top: -108px;
+  right: -37px;
 }

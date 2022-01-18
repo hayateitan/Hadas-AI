@@ -1,5 +1,6 @@
 [
   {
+    "id":1,
     "retail_price": "12",
     "uses_ad_boosts": "0",
     "rating": "3.5",
@@ -7,6 +8,7 @@
     "merchant_has_profile_picture": "1"
   },
   {
+    "id":2,
     "retail_price": "20",
     "uses_ad_boosts": "0",
     "rating": "4",
@@ -14,6 +16,7 @@
     "merchant_has_profile_picture": "1"
   },
   {
+    "id":3,
     "retail_price": "30",
     "uses_ad_boosts": "0",
     "rating": "4",
@@ -21,6 +24,7 @@
     "merchant_has_profile_picture": "1"
   },
   {
+    "id":4,
     "retail_price": "50",
     "uses_ad_boosts": "0",
     "rating": "4",
@@ -28,6 +32,7 @@
     "merchant_has_profile_picture": "0"
   },
   {
+    "id":5,
     "retail_price": "50",
     "uses_ad_boosts": "1",
     "rating": "4.5",

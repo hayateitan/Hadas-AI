@@ -1,160 +1,217 @@
-/* div#containerprincipalnotebook {
-    background: white;
-    height: 100vh;
-    width: auto;
-} */
 div#navIcon {
-	position: relative;
-	display: grid;
-	top: 114px;
-	left: 20px;
-	z-index: 99;
-	font-size: 20px;
+  position: relative;
+  display: grid;
+  top: 114px;
+  left: 20px;
+  z-index: 99;
+  font-size: 20px;
 }
 div#containericon {
-	position: fixed;
+  position: fixed;
 }
 
 div#navbarScroll {
-	flex-grow: 1;
-	align-items: center;
+  flex-grow: 1;
+  align-items: center;
 }
 #navbarCss {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	background: rgb(3 3 3);
-	top: -8px;
-	width: auto;
-	background: black;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: rgb(3 3 3);
+  top: -8px;
+  width: auto;
+  background: black;
 }
 
 img#imgNavbar {
-	width: 31px;
-	height: 45px;
-	top: 4px;
-	left: 10px;
-	position: relative;
+  width: 31px;
+  height: 45px;
+  top: 4px;
+  left: 10px;
+  position: relative;
 }
 
 svg#iconnavbar {
-	display: block;
-	color: rgb(198, 198, 198);
-	font-size: 20px;
-	text-align: center;
-	position: relative;
-	top: 0px;
-	left: 1px;
+  display: block;
+  color: rgb(198, 198, 198);
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 1px;
 }
 button.btn.btn-outline-success {
-	position: relative;
-	top: 2px;
-	left: -49px;
-	background: #f0f8ff00;
-	border: #f0f8ff00;
+  position: relative;
+  top: 2px;
+  left: -49px;
+  background: #f0f8ff00;
+  border: #f0f8ff00;
 }
 
 form.d-flex {
-	position: relative;
-	top: 3px;
-	left: 343px;
+  position: relative;
+  top: 3px;
+  left: 343px;
 }
 svg#icon {
-	width: 30px;
-	height: 33px;
-	text-decoration: none;
-	color: #263f56;
+  width: 30px;
+  height: 33px;
+  text-decoration: none;
+  color: #263f56;
 }
 
 svg#iconSlack {
-	width: 30px;
-	height: 33px;
+  width: 30px;
+  height: 33px;
 }
 
 nav#main-nav {
-	background: #f1f3f2;
-	height: 73px;
+  background: #f1f3f2;
+  height: 73px;
 }
 
 svg.svg-inline--fa.fa-pen.fa-w-16.fa-lg {
-	color: #23425e;
+  color: #23425e;
 }
 svg.svg-inline--fa.fa-bell.fa-w-14.fa-lg {
-	color: #23425e;
+  color: #23425e;
 }
 svg.svg-inline--fa.fa-user.fa-w-14.fa-lg {
-	color: #23425e;
+  color: #23425e;
 }
 a.navbar-brand {
-	position: absolute;
-	left: 17px;
-	/* right: -8px; */
+  position: absolute;
+  left: 17px;
+  /* right: -8px; */
 }
 
 div#popover-contained {
-	width: 168px;
-	height: 151px;
+  width: 168px;
+  height: 151px;
 }
 p#PWIPPH {
-	position: absolute;
-	color: #082e40;
-	left: 11px;
-	font-size: 20px;
+  position: absolute;
+  color: #082e40;
+  left: 11px;
+  font-size: 20px;
 }
 div#NIA {
-	right: 32px;
-	position: relative;
+  right: 32px;
+  position: relative;
 }
 div#NIN {
-	position: relative;
-	right: 52px;
-	top: 0px;
+  position: relative;
+  right: 52px;
+  top: 4px;
 }
 
-div#NIF {
+/* div#NIF {
 	position: relative;
 	right: 72px;
-}
-div#lala {
+} */
+/* div#searchbarnavbar {
     background: #dadada;
-}
+} */
 div#containersearch {
-    position: absolute;
-    right: -70px;
-    top: 5px;
+  position: absolute;
+  right: -70px;
+  top: 5px;
 }
 div#widthautosearchbar {
-    background: #ffffff;
-    height: 10px;
-    top: 20px;
-    position: absolute;
+  background: #ffffff;
+  height: 10px;
+  top: 20px;
+  position: absolute;
 }
 .popover-arrow {
-    position: absolute;
-    top: -1086px;
-    /* display: none; */
-    /* background: #ffffff00; */
+  position: absolute;
+  top: -1086px;
+  /* display: none; */
+  /* background: #ffffff00; */
 }
 div#widthautosearchbar {
-    background: #f1f3f200;
-    height: 6px;
-    top: 26px;
-    position: absolute;
+  background: #f1f3f200;
+  height: 6px;
+  top: 26px;
+  position: absolute;
 }
 img#logoNavbar {
-    width: 156px;
+  width: 156px;
 }
 div#NIS {
-    right: 162px;
-    position: relative;
-    top: -1px;
+  right: 162px;
+  position: relative;
+  top: -1px;
 }
 div#containersearchbar {
-    position: absolute;
-    right: -33px;
-    top: -15px;
+  position: absolute;
+  right: -33px;
+  top: -15px;
+}
+div#NIH {
+  right: 901px;
+  position: relative;
+  top: 24px;
+}
+div#NINB {
+  right: 747px;
+  position: relative;
+  top: 24px;
+}
+div#NID {
+  right: 595px;
+  position: relative;
+  top: 24px;
+}
+div#NIC {
+  right: 454px;
+  position: relative;
+  top: 24px;
+}
+
+div#NISL {
+  right: 311px;
+  position: relative;
+  top: 5px;
+}
+p {
+  color: #082e40;
+  font-family: raleway;
+  font-weight: 500;
+  font-size: 13px;
+  top: -24px;
+  right: -44px;
+  position: relative;
+}
+
+p#line1 {
+  position: absolute;
+  top: -2px;
+  left: 110px;
+  font-size: 29px;
+}
+p#line2 {
+  position: absolute;
+  top: -2px;
+  left: 151px;
+  font-size: 29px;
+}
+
+p#line3 {
+  position: absolute;
+  top: -2px;
+  left: 140px;
+  font-size: 29px;
+}
+
+p#line4 {
+  position: absolute;
+  top: -2px;
+  left: 109px;
+  font-size: 29px;
 }

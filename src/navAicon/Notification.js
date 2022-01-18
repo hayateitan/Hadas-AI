@@ -15,7 +15,7 @@ const Notification = () => {
 
   return (
     <div ref={ref}>
-      <Badge badgeContent={4} color="error" >
+      <Badge badgeContent={4} color="error">
         <NotificationsIcon onClick={handleClick} />
       </Badge>
       <Overlay

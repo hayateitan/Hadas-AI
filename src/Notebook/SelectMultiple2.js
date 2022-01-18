@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useHistory } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useTheme } from "@mui/material/styles";
 import InputLabel from "@mui/material/InputLabel";
@@ -7,18 +7,18 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./style.css";
 
-const names = [
-  "Oliver Hansen",
-  "Van Henry",
-  "April Tucker",
-  "Ralph Hubbard",
-  "Omar Alexander",
-  "Carlos Abbott",
-  "Miriam Wagner",
-  "Bradley Wilkerson",
-  "Virginia Andrews",
-  "Kelly Snyder",
-];
+// const names = [
+//   "Oliver Hansen",
+//   "Van Henry",
+//   "April Tucker",
+//   "Ralph Hubbard",
+//   "Omar Alexander",
+//   "Carlos Abbott",
+//   "Miriam Wagner",
+//   "Bradley Wilkerson",
+//   "Virginia Andrews",
+//   "Kelly Snyder",
+// ];
 
 function getStyles(name, personName, theme) {
   return {

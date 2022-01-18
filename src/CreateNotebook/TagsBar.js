@@ -1,6 +1,6 @@
 import React from 'react'
 import './Tagsbar.css'
-
+import {Form} from 'react-bootstrap'
 
 const TagsBar = (props) => {
 
@@ -19,8 +19,9 @@ const TagsBar = (props) => {
     };
 
     return (
-        <div id="containerTagsbar">
-            <div id="tagsbar">
+        <>
+       
+            <Form.Label id="labelcreatenotebooktagsbar">Tags:</Form.Label>
                 <div className="tags-input">
                     <ul id="tags">
                         {tags.map((tag, index) => (
@@ -37,11 +38,11 @@ const TagsBar = (props) => {
                     <input
                         type="text"
                         onKeyUp={event => event.keyCode === 32 ? addTags(event) : null}
-                        placeholder="Press spacebar to add tags"
+                        placeholder="Type here..."
                     />
                 </div>
-            </div>
-        </div>
+           
+        </>
 
 
 
